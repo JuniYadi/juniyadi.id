@@ -1,1 +1,64 @@
-theme: jekyll-theme-cayman
+# Site
+name: "Juni Yadi"
+title: "Blog Juni Yadi"
+description: "My Blog My Inspiration."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: ''
+google_analytics: 'UA-130179749-1'
+disqus: 'blogjy'
+mailchimp-list: 'https://premiumfast.us13.list-manage.com/subscribe?u=7dd326efea8f1340cb62f6d5a&amp;id=85f1f76bd9'
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  yadi:
+    name: Juni Yadi
+    display_name: Juni Yadi
+    gravatar: 521877967a6733d038f55c7374ff5833
+    email: me@juniyadi.id
+    web: https://juniyadi.id
+    twitter: https://twitter.com/blogjuniyadi
+    description: "Sysadmin (Linux/Windows) & Junior Web Developer."
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 9
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  auto_ids: true
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "enabled"
+adsense-data-ad-client: "ca-pub-5088338290552742"
+adsense-data-ad-slot: "3105195511"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "enabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
