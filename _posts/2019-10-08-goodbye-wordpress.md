@@ -26,6 +26,15 @@ Mulai Sabtu 5 Oktober 2019, saya sudah mencoba berbagai metode yang sesuai kebut
 
 Jadi saya berdiskusi dengan beberapa teman, sempat juga mencoba HUGO, tetapi akhirnya terpilih Jekyll sebagai JAMStack saat ini. Apa itu JAMStack? Akan kita bahas dilain waktu ya.
 
+### Tampilan Halaman Depan Juni Yadi
+![](/assets/images/uploads/2019/10/halaman-juniyadi.png)
+
+### Tampilan Juni Yadi Blogs Dengan WordPress
+![](/assets/images/uploads/2019/10/halaman-blog-juniyadi.png)
+
+### Tampilan Juni Yadi Blogs Dengan Jekyll + Github Pages
+![](/assets/images/uploads/2019/10/halaman-blog-juniyadi-terbaru.png)
+
 ## Saat Ini JY Blog Pakai Apa?
 Saat ini JY Blog menggunakan Jekyll + Github Pages.
 
