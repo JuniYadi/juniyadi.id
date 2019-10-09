@@ -5,6 +5,7 @@ description: "My Blog My Inspiration."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
+domain: 'juniyadi.id'
 google_analytics: 'UA-130179749-1'
 disqus: 'blogjy'
 mailchimp-list: 'https://premiumfast.us13.list-manage.com/subscribe?u=7dd326efea8f1340cb62f6d5a&amp;id=85f1f76bd9'
