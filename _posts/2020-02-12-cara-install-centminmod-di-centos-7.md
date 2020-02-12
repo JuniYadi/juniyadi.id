@@ -4,7 +4,7 @@ title: "Cara Install Centminmod di CentOS 7"
 author: yadi
 categories: [ linux ]
 tags: [ centminmod ]
-image: assets/images/uploads/2019/10/close-up-code-coding.jpg
+image: assets/images/uploads/2020/02/cara-install-centminmod-di-centos-7-001.png
 date: 2020-02-12 15:31:00 +07:00
 featured: true
 hidden: false
