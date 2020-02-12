@@ -7,7 +7,7 @@ tags: [ indonesia ]
 image: assets/images/uploads/2019/09/gundala.jpg
 date: 2019-08-29 20:46:14 +07:00
 description: "Review pribadi saya tentang film gundala (2019)."
-featured: true
+featured: false
 hidden: false
 rating: 5
 ---
