@@ -42,9 +42,6 @@ Pada tutorial ini saya akan menjelaskan "Cara Install Centminmod di CentOS 7", b
 
 Syarat diatas berlaku untuk installasi awal agar lebih lancar, untuk penggunaan selanjutnya, anda bisa mengoptimasi lebih banyak lagi.
 
-### Tampilan `Centminmod`
-![cara-install-centminmod-di-centos-7-001.png](/assets/images/uploads/2020/02/cara-install-centminmod-di-centos-7-001.png)
-
 ## Cara Install `Centminmod`
 
 Anda tidak perlu input manual satu-per-satu, anda hanya perlu jalankan 1 baris code, dan sisanya akan di install secara automatis oleh `Centminmod`
@@ -54,6 +51,7 @@ yum -y update; curl -O https://centminmod.com/installer.sh && chmod 0700 install
 ```
 
 ### Catatan
+- Setelah installasi selesai, Untuk menampilkan menu `Centminmod`, jalankan command `centmin` (contoh gambar menu pada header post ini)
 - `Centminmod` akan menginstall dari sources, yang artinya akan di compile pemograman yang dibutuhkan, ini mungkin membutuhkan waktu, tetapi ini juga bertujuan untuk optimasi software yang digunakan, sehingga akan dicocokan sources vps dengan konfigurasi yang optimal
 
 ![cara-install-centminmod-di-centos-7-002.png](/assets/images/uploads/2020/02/cara-install-centminmod-di-centos-7-002.png)
