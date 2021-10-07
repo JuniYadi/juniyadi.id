@@ -23,7 +23,7 @@ comments: false
 <div class="sticky-top sticky-top-80">
 <h5>Contact Me</h5>
 
-<img style="height:auto;border-radius:50%;" alt="" width="160" class="avatar avatar-user width-full border color-bg-primary" src="https://avatars.githubusercontent.com/u/31454084?v=4">
+<p class="text-center"><img style="height:auto;border-radius:50%;" alt="" width="160" class="avatar avatar-user width-full border color-bg-primary" src="https://avatars.githubusercontent.com/u/31454084?v=4"></p>
 
 <p>Thank you for your support! Your support helps me to maintain and improve my blogs.</p>
 
