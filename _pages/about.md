@@ -27,7 +27,7 @@ comments: false
 
 <p>Thank you for your support! Your support helps me to maintain and improve my blogs.</p>
 
-<a target="_blank" href="mailto:me@juniyadi.id" class="btn btn-success m-2"><i class="fab fa-envelope"></i> me@juniyadi.id</a>
+<a target="_blank" href="mailto:me@juniyadi.id" class="btn btn-success m-2"><i class="fas fa-envelope"></i> me@juniyadi.id</a>
 <a target="_blank" href="https://www.facebook.com/YadiYadhiApriyadi" class="btn btn-primary m-2"><i class="fab fa-facebook"></i> Yadi Yadhi Apriyadi</a>
 <a target="_blank" href="https://twitter.com/blogjuniyadi" class="btn btn-info m-2"><i class="fab fa-twitter"></i> blogjuniyadi</a>
 <a target="_blank" href="https://medium.com/@juniyadi" class="btn btn-secondary m-2"><i class="fab fa-medium"></i> @juniyadi</a>
