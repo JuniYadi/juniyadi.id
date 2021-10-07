@@ -27,13 +27,33 @@ comments: false
 
 <p>Thank you for your support! Your support helps me to maintain and improve my blogs.</p>
 
-<a target="_blank" href="https://github.com/JuniYadi" class="btn btn-secondary btn-sm btn-block m-1"><i class="fab fa-github"></i> Github</a>
-<a target="_blank" href="https://www.linkedin.com/in/juniyadi/" class="btn btn-info btn-sm btn-block m-1"><i class="fab fa-linkedin"></i> LinkedIn</a>
-<a target="_blank" href="mailto:me@juniyadi.id" class="btn btn-success btn-sm btn-block m-1"><i class="fas fa-envelope"></i> Email</a>
-<a target="_blank" href="https://www.facebook.com/YadiYadhiApriyadi" class="btn btn-primary btn-sm btn-block m-1"><i class="fab fa-facebook"></i> Facebook</a>
-<a target="_blank" href="https://twitter.com/blogjuniyadi" class="btn btn-info btn-sm btn-block m-1"><i class="fab fa-twitter"></i> Twitter</a>
-<a target="_blank" href="https://medium.com/@juniyadi" class="btn btn-secondary btn-sm btn-block m-1"><i class="fab fa-medium"></i> Medium</a>
+<div class="row">
 
+<div class="col-xs-12 col-md-6">
+    <a target="_blank" href="https://github.com/JuniYadi" class="btn btn-secondary btn-sm btn-block m-1"><i class="fab fa-github"></i> Github</a>
+</div>
+    
+<div class="col-xs-12 col-md-6">
+    <a target="_blank" href="https://www.linkedin.com/in/juniyadi/" class="btn btn-info btn-sm btn-block m-1"><i class="fab fa-linkedin"></i> LinkedIn</a>
+</div>
+
+<div class="col-xs-12 col-md-6">
+    <a target="_blank" href="mailto:me@juniyadi.id" class="btn btn-success btn-sm btn-block m-1"><i class="fas fa-envelope"></i> Email</a>
+</div>
+
+<div class="col-xs-12 col-md-6">
+    <a target="_blank" href="https://www.facebook.com/YadiYadhiApriyadi" class="btn btn-primary btn-sm btn-block m-1"><i class="fab fa-facebook"></i> Facebook</a>
+</div>
+
+<div class="col-xs-12 col-md-6">
+    <a target="_blank" href="https://twitter.com/blogjuniyadi" class="btn btn-info btn-sm btn-block m-1"><i class="fab fa-twitter"></i> Twitter</a>
+</div>
+
+<div class="col-xs-12 col-md-6">
+    <a target="_blank" href="https://medium.com/@juniyadi" class="btn btn-secondary btn-sm btn-block m-1"><i class="fab fa-medium"></i> Medium</a>
+</div>
+
+</div>
 
 </div>
 </div>
