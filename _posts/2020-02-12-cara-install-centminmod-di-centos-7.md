@@ -6,7 +6,7 @@ categories: [ linux ]
 tags: [ centminmod ]
 image: assets/images/uploads/2020/02/cara-install-centminmod-di-centos-7-001.png
 date: 2020-02-12 15:31:00 +07:00
-featured: true
+featured: false
 hidden: false
 ---
 
