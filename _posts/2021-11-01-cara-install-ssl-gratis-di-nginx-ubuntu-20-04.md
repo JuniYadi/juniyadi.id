@@ -6,7 +6,7 @@ categories: [ linux ]
 tags: [ nginx, ssl ]
 image: assets/images/uploads/2021/11/zerossl-free.jpg
 date: 2020-11-01 13:00:00 +07:00
-featured: true
+featured: false
 hidden: true
 ---
 
