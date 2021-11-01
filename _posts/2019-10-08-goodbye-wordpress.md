@@ -5,7 +5,7 @@ author: yadi
 tags: [ about ]
 image: assets/images/uploads/2019/10/close-up-code-coding.jpg
 date: 2019-10-08 10:12:00 +07:00
-featured: true
+featured: false
 hidden: false
 ---
 

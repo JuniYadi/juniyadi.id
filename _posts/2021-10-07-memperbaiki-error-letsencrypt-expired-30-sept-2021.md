@@ -6,7 +6,7 @@ categories: [ linux, windows ]
 tags: [ ssl ]
 image: assets/images/uploads/2021/10/letsencrypt.jpg
 date: 2021-10-07 15:30:00 +07:00
-featured: true
+featured: false
 hidden: false
 ---
 
