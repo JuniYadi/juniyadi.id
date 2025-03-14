@@ -13,7 +13,7 @@ export default function Home() {
             <div className="relative h-64 w-64 md:h-80 md:w-80 mx-auto">
               {/* Replace with your actual profile image */}
               <Image
-                src="/profile.png"
+                src="/profile-white.jpg"
                 alt="JuniYadi Profile"
                 fill
                 className="rounded-full object-cover shadow-lg"
@@ -26,12 +26,13 @@ export default function Home() {
               Juni Yadi
             </h1>
             <h2 className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 mb-6">
-              Full Stack Developer
+              Lead DevOps Engineer
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-              Passionate developer with expertise in web technologies, cloud
-              architecture, and system automation. I build scalable solutions
-              that make a difference.
+              Experienced DevOps Engineer specializing in infrastructure
+              automation, CI/CD pipelines, cloud architecture, and system
+              reliability. I build and maintain scalable, resilient
+              infrastructure that empowers development teams.
             </p>
             <div className="flex space-x-4">
               <a
