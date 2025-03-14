@@ -4,17 +4,33 @@ import mdxComponents from "@/components/mdx-components";
 import matter from "gray-matter";
 import FusionCollection from "fusionable/FusionCollection";
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export async function generateStaticParams() {
+  const collection = new FusionCollection()
+    .loadFromDir("src/contents/posts")
+    .orderBy("date", "desc");
+  const posts = collection.getItemsArray();
+
+  return posts.map((p) => ({
+    slug: p.fields.slug,
+  }));
+}
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
   // Check if slug is defined
-  if (!params.slug) {
+  if (!slug) {
     notFound();
   }
 
   try {
     const collection = new FusionCollection().loadFromDir("src/contents/posts");
-    const fileContent = collection.getOneByFilename(params.slug + ".md");
+    const fileContent = collection.getOneByFilename(slug + ".md");
 
-    console.log("src/contents/posts/" + params.slug + ".md");
+    console.log("src/contents/posts/" + slug + ".md");
 
     if (!fileContent) {
       notFound();
