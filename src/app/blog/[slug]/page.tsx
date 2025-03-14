@@ -16,7 +16,7 @@ export default async function ProjectPage({
 
   try {
     const collection = new FusionCollection().loadFromDir("src/contents/posts");
-    const fileContent = collection.getOneBySlug(params.slug);
+    const fileContent = collection.getOneByFilename(params.slug);
 
     if (!fileContent) {
       notFound();
