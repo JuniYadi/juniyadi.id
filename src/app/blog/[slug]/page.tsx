@@ -4,11 +4,7 @@ import mdxComponents from "@/components/mdx-components";
 import matter from "gray-matter";
 import FusionCollection from "fusionable/FusionCollection";
 
-export default async function ProjectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function Page({ params }: { params: { slug: string } }) {
   // Check if slug is defined
   if (!params.slug) {
     notFound();
@@ -16,7 +12,7 @@ export default async function ProjectPage({
 
   try {
     const collection = new FusionCollection().loadFromDir("src/contents/posts");
-    const fileContent = collection.getOneByFilename(params.slug);
+    const fileContent = collection.getOneByFilename(params.slug + ".md");
 
     if (!fileContent) {
       notFound();
