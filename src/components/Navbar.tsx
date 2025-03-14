@@ -6,6 +6,8 @@ import Link from "next/link";
 const Navbar = () => {
   const [isMenuOpen, _setIsMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const resumeLink = "/resume/Resume-JuniYadi.pdf";
+  const contactLink = "mailto:me@juniyadi.id";
 
   useEffect(() => {
     // Check if we're in the browser environment
@@ -120,13 +122,13 @@ const Navbar = () => {
             </button>
 
             <Link
-              href="/resume"
+              href={resumeLink}
               className="px-4 py-2 border border-blue-500 text-blue-500 dark:text-blue-400 dark:border-blue-400 rounded-md hover:bg-blue-500 hover:text-white dark:hover:bg-blue-600 transition-colors"
             >
               Get Resume
             </Link>
             <Link
-              href="/contact"
+              href={contactLink}
               className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 transition-colors"
             >
               Contact
@@ -229,13 +231,13 @@ const Navbar = () => {
           </div>
           <div className="px-2 pt-2 pb-3 space-y-2">
             <Link
-              href="/resume"
+              href={resumeLink}
               className="block px-4 py-2 text-center border border-blue-500 text-blue-500 dark:text-blue-400 dark:border-blue-400 rounded-md hover:bg-blue-500 hover:text-white dark:hover:bg-blue-600 transition-colors"
             >
               Get Resume
             </Link>
             <Link
-              href="/contact"
+              href={contactLink}
               className="block px-4 py-2 text-center bg-blue-500 text-white rounded-md hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 transition-colors"
             >
               Contact
