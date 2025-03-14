@@ -3,7 +3,8 @@ import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
 // set default runtime to edge
-export const runtime = "edge";
+// export const runtime = "edge";
+
 const font = Roboto_Mono({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
