@@ -14,6 +14,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
     const collection = new FusionCollection().loadFromDir("src/contents/posts");
     const fileContent = collection.getOneByFilename(params.slug + ".md");
 
+    console.log("src/contents/posts/" + params.slug + ".md");
+
     if (!fileContent) {
       notFound();
     }
