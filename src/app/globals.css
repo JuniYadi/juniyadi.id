@@ -2,22 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+/* Base styles with dark mode support */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 255 255 255;
+    --foreground: 15 23 42;
+
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
+
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
+
+    --primary: 37 99 235;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 241 245 249;
+    --secondary-foreground: 15 23 42;
+
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
+
+    --accent: 241 245 249;
+    --accent-foreground: 15 23 42;
+
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 37 99 235;
+  }
+
+  .dark {
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+
+    --card: 30 41 59;
+    --card-foreground: 248 250 252;
+
+    --popover: 30 41 59;
+    --popover-foreground: 248 250 252;
+
+    --primary: 59 130 246;
+    --primary-foreground: 248 250 252;
+
+    --secondary: 30 41 59;
+    --secondary-foreground: 248 250 252;
+
+    --muted: 51 65 85;
+    --muted-foreground: 148 163 184;
+
+    --accent: 51 65 85;
+    --accent-foreground: 248 250 252;
+
+    --border: 51 65 85;
+    --input: 51 65 85;
+    --ring: 59 130 246;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-50 transition-theme;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Add smooth transition for dark mode changes */
+  .transition-theme {
+    transition: background-color 0.3s ease, color 0.3s ease,
+      border-color 0.3s ease;
   }
 }
 
+/* This body style may be overriding Tailwind classes */
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
   font-family: Arial, Helvetica, sans-serif;
+  @apply transition-theme;
 }
 
 @layer utilities {

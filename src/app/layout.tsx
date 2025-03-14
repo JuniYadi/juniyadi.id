@@ -1,9 +1,8 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
-import "./globals.css";
-
-// set default runtime to edge
-// export const runtime = "edge";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const font = Roboto_Mono({
   weight: ["400", "500", "700"],
@@ -11,18 +10,22 @@ const font = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JuniYadi Site",
-  description: "Get the latest news in technology and programming",
+  title: "JuniYadi",
+  description: "Personal Website of Juni Yadi",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={`${font.className} antialiased`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${font.className} antialiased`}>
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
