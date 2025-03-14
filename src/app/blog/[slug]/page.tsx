@@ -1,14 +1,31 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
-// import mdxComponents from "@/components/mdx-components";
 import matter from "gray-matter";
 import FusionCollection from "fusionable/FusionCollection";
+// import mdxComponents from "@/components/mdx-components";
+
+// plugins inject
 import remarkGfm from "remark-gfm";
+// import remarkGithub from "remark-github";
+import remarkEmoji from "remark-emoji";
+import rehypeSlug from "rehype-slug";
+import rehypeSanitize from "rehype-sanitize";
+import rehypeHighlight from "rehype-highlight";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeToc from "rehype-toc";
 
 const options = {
   mdxOptions: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [],
+    // remarkPlugins: [remarkGfm, remarkGithub, remarkEmoji],
+    remarkPlugins: [remarkGfm, remarkEmoji],
+    // rehypePlugins: [],
+    rehypePlugins: [
+      rehypeSanitize,
+      rehypeSlug,
+      rehypeHighlight,
+      rehypeAutolinkHeadings,
+      rehypeToc,
+    ],
   },
 };
 
