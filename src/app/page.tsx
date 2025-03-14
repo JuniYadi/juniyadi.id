@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <div className="relative h-64 w-64 md:h-80 md:w-80 mx-auto">
@@ -22,13 +22,13 @@ export default function Home() {
             </div>
           </div>
           <div className="md:w-1/2 md:pl-10">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-4">
               Juni Yadi
             </h1>
-            <h2 className="text-xl md:text-2xl text-blue-600 mb-6">
+            <h2 className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 mb-6">
               Full Stack Developer
             </h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
               Passionate developer with expertise in web technologies, cloud
               architecture, and system automation. I build scalable solutions
               that make a difference.
@@ -38,7 +38,7 @@ export default function Home() {
                 href="https://github.com/juniyadi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-800 text-white rounded-full hover:bg-gray-700"
+                className="p-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600"
               >
                 <svg
                   className="h-5 w-5"
@@ -56,7 +56,7 @@ export default function Home() {
                 href="https://linkedin.com/in/juniyadi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700"
+                className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800"
               >
                 <svg
                   className="h-5 w-5"
@@ -70,7 +70,7 @@ export default function Home() {
                 href="https://twitter.com/juniyadi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-blue-400 text-white rounded-full hover:bg-blue-500"
+                className="p-2 bg-blue-400 text-white rounded-full hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600"
               >
                 <svg
                   className="h-5 w-5"
