@@ -50,16 +50,21 @@ export default async function BlogPage() {
               </p>
               {post.fields.tags && post.fields.tags.length > 0 && (
                 <div className="flex flex-wrap gap-1 mt-auto">
-                  {post.fields.tags.slice(0, 3).map((tag: string) => (
+                  {post.fields.tags
+                    .slice(0, 3)
+                    .map((tag: string, index: number) => (
+                      <span
+                        key={`${post.fields.slug}-tag-${index}-${tag}`}
+                        className="px-2 py-0.5 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-full"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                  {post.fields.tags.length > 3 && (
                     <span
-                      key={tag}
+                      key={`${post.fields.slug}-tag-more`}
                       className="px-2 py-0.5 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-full"
                     >
-                      {tag}
-                    </span>
-                  ))}
-                  {post.fields.tags.length > 3 && (
-                    <span className="px-2 py-0.5 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-full">
                       +{post.fields.tags.length - 3}
                     </span>
                   )}
