@@ -5,39 +5,13 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Comments from "@/components/Comments";
 import { s } from "@/lib/slug";
-
-import "highlight.js/styles/github-dark.css";
-import "./styles.css";
-
-// plugins inject
-import remarkGfm from "remark-gfm";
-import remarkEmoji from "remark-emoji";
-import rehypeSlug from "rehype-slug";
-import rehypeSanitize from "rehype-sanitize";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeToc from "rehype-toc";
-import rehypeHighlight from "rehype-highlight";
-import rehypeCodeLine from "rehype-highlight-code-lines";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { formatDateTime } from "@/lib/date";
+import { MarkdownOptions } from "@/lib/markdown";
 
 // Force static generation
 export const dynamic = "force-static";
 export const revalidate = false;
-
-const options = {
-  mdxOptions: {
-    remarkPlugins: [remarkGfm, remarkEmoji],
-    rehypePlugins: [
-      rehypeSanitize,
-      rehypeSlug,
-      rehypeAutolinkHeadings,
-      rehypeHighlight,
-      [rehypeCodeLine, { showLineNumbers: false }] as never,
-      rehypeToc,
-    ],
-  },
-};
 
 export async function generateMetadata({
   params,
@@ -144,7 +118,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                   </a>
                 ))}
               </div>
-              <MDXRemote source={content} options={options} />
+              <MDXRemote source={content} options={MarkdownOptions} />
             </article>
           </main>
 
