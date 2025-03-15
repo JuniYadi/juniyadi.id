@@ -6,7 +6,7 @@ date: "2018-11-30T07:36:24+07:00"
 highlight: false
 draft: false
 category: "general"
-tags: ["about", "introduction"]
+tags: ["System Administration", "Front-End Development", "Back-End Development", "Introduction"]
 cover: "/assets/images/uploads/2018/11/coding-writing.jpg"
 author: "yadi"
 ---
