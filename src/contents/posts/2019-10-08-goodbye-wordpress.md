@@ -50,7 +50,7 @@ Saat ini JY Blog menggunakan Jekyll + Github Pages.
 1. Jekyll di dukung secara default oleh [Github Pages](https://pages.github.com/), dan dengan Jekyll juga ada tema-tema gratis yang banyak dan kekinian, bisa digunakan langsung. [Website List Tema Jekyll](http://jekyllthemes.org/).
 2. Saya ingin fokus ke kontent dibandingkan security.
 3. Ingin menggunakan markdown dalam setiap pembuatan artikel.
-4. Hosting dengan Github Pages **GRATIS..!!**, bisa handel traffic tinggi, tidak perlu pusing dengan hosting atau website anda mati mendadak.. (>\_<)9.
+4. Hosting dengan Github Pages **GRATIS..!!**, bisa handel traffic tinggi, tidak perlu pusing dengan hosting atau website anda mati mendadak.
 
 Mungkin itu saja saat ini, next akan saya bahas tentang apa itu github pages, dan jekyll dan cara penggunaannya.
 

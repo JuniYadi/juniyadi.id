@@ -20,10 +20,9 @@ Pada post kali ini, saya akan membahas tentang pengenalan dasar PHP. PHP ini buk
 > Saya tidak akan membahas lebih dalam mengenai sejarah, untuk sejarahnya silahkan cek referensi berikut :
 
 
-> Wikipedia Bahasa Indonesia : https://id.wikipedia.org/wiki/PHP
+> Wikipedia Bahasa Indonesia : [https://id.wikipedia.org/wiki/PHP](https://id.wikipedia.org/wiki/PHP)
 
-
-> Wikipedia Bahasa Inggris : https://en.wikipedia.org/wiki/PHP
+> Wikipedia Bahasa Inggris : [https://en.wikipedia.org/wiki/PHP](https://en.wikipedia.org/wiki/PHP)
 
 # Kenapa harus menggunakan PHP?
 Mungkin bagi sebagian developer profesional, php ini sudah sangat usang bagi mereka, akan tetapi, menurut saya pribadi, belajar membangun website dengan PHP adalah langkah awal yang sangat direkomendasikan bagi anda yang ingin memulai membangun website dari nol (awal).
@@ -43,12 +42,12 @@ Jika tidak tidak mengerti dasar-dasar perintah yang ingin kita gunakan, tentu in
 ```
 
 ## Pada contoh diatas, maka dijabarkan seperti ini :
-* <?php #codingan anda ?> => ini adalah tag yang harus digunakan diawal dan akhir file berekstensi .php , hal ini menandakan bahwa semua data pada tag tersebut merupakan code untuk pemograman php
-* echo => menampilkan data 
+* Tag PHP - Tag yang harus digunakan diawal dan akhir file berekstensi .php, hal ini menandakan bahwa semua data pada tag tersebut merupakan code untuk pemograman PHP
+* echo - Perintah untuk menampilkan data 
 * “” => double quote digunakan untuk menyimpan string atau text jika ingin di echo atau dimasukkan ke variable
-* ; => titik koma digunakan untuk menyatakan bahwa itu merupakan akhir dari baris coding / variable.
+* Semicolon - Titik koma digunakan untuk menyatakan bahwa itu merupakan akhir dari baris coding atau variable.
 
-Wah ternyata kalau dijelaskan jadi panjang juga ya ?? hehe .. tenang, itu hanya sebagian kode dasar aja, bagaimana kalau seperti ini?
+Wah ternyata kalau dijelaskan jadi panjang juga ya. Tenang, itu hanya sebagian kode dasar aja, bagaimana kalau seperti ini?
 
 ```php
 <?php 
@@ -61,13 +60,13 @@ echo "$a <br> $b <br> $c";
 ?>
 ```
 
-## Pada contoh diatas, kita menyimpan semua string ke dalam variable _(untuk setiap variable diawali dengan simbol dollar $)_.
+## Pada contoh diatas, kita menyimpan semua string ke dalam variable (untuk setiap variable diawali dengan simbol dollar $).
 
 Jika kita test, maka hasilnya seperti ini :
 
 ![](/assets/images/uploads/2018/12/Pengenalan-Dasar-PHP-Untuk-Pemula-Ini-Budi.png)
 
-Untuk referensi tentunya langsung ke website si empunya => http://php.net/docs.php
+Untuk referensi tentunya langsung ke website si empunya: [http://php.net/docs.php](http://php.net/docs.php)
 
 Bagaimana? tidak terlalu susah bukan?
 Semoga Bermanfaat.
