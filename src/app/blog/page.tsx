@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { getAllPosts } from "@/lib/posts";
 import { Metadata } from "next";
+import { formatDateTime } from "@/lib/date";
+import { s } from "@/lib/slug";
 
 // revalidate every 1 hour
 export const revalidate = 3600;
@@ -50,8 +52,7 @@ export default async function BlogPage() {
                 </h2>
               </div>
               <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                {post.fields.date &&
-                  new Date(post.fields.date).toLocaleString()}
+                {post.fields.date && formatDateTime(post.fields.date)}
               </p>
               <p className="text-sm line-clamp-2 mb-3 flex-grow text-gray-700 dark:text-gray-300">
                 {post.fields.description}
@@ -62,10 +63,10 @@ export default async function BlogPage() {
                     .slice(0, 3)
                     .map((tag: string, index: number) => (
                       <span
-                        key={`${post.fields.slug}-tag-${index}-${tag}`}
+                        key={`${post.fields.slug}-tag-${index}-${s(tag)}`}
                         className="px-2 py-0.5 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-full"
                       >
-                        #{tag}
+                        #{s(tag)}
                       </span>
                     ))}
                   {post.fields.tags.length > 3 && (
