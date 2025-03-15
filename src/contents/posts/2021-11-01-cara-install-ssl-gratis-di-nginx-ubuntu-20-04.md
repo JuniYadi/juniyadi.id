@@ -8,9 +8,10 @@ draft: false
 categories:
   - Tutorial
 tags:
-  - linux
-  - nginx
-  - ssl
+  - SSL
+  - Nginx
+  - Ubuntu
+  - ZeroSSL
 cover: /assets/images/uploads/2021/11/zerossl-free.jpg
 author: yadi
 ---
