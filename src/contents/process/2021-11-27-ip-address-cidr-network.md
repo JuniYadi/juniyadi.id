@@ -1,13 +1,16 @@
 ---
-layout: post
 title: "IP Address CIDR Network"
+slug: ip-address-cidr-network
+description: "Penjelasan tentang CIDR notation dan tabel IP Address untuk konfigurasi jaringan"
+date: "2021-11-27T10:11:00+07:00"
+highlight: false
+draft: false
+tags:
+  - linux
+  - network
+  - ip
+cover: /assets/images/uploads/2021/11/network.jpg
 author: yadi
-categories: [ linux ]
-tags: [ ip, network ]
-image: assets/images/uploads/2021/11/network.jpg
-date: 2020-11-27 10:11:00 +07:00
-featured: false
-hidden: false
 ---
 
 Hai sobat yadi. kali ini saya akan memberikan **IP Address CIDR Network**.

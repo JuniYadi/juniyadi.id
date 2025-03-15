@@ -1,13 +1,15 @@
 ---
-layout: post
 title: "Ubuntu 22.04 Fix Bluetooth"
+slug: ubuntu-22-04-fix-bluetooth
+description: "Cara memperbaiki kualitas audio bluetooth di Ubuntu 22.04"
+date: "2022-07-27T10:00:00+07:00"
+highlight: false 
+draft: false
+tags:
+  - linux
+  - ubuntu
+cover: /assets/images/uploads/2022/07/ubuntu-bluetooth.png
 author: yadi
-categories: [ linux ]
-tags: [ ubuntu ]
-image: assets/images/uploads/2022/07/27/ubuntu-bluetooth.png
-date: 2022-07-27 10:00:00 +07:00
-featured: false
-hidden: false
 ---
 
 Hai sobat yadi, kali ini saya ingin share sedikit tentang memperbaiki bluetooth di ubuntu.
