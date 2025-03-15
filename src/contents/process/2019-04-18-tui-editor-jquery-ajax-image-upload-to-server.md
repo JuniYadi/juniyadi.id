@@ -1,11 +1,17 @@
 ---
-layout: post
 title: "tui Editor: jQuery Ajax Image Upload to Server"
+slug: tui-editor-jquery-ajax-image-upload-to-server
+description: "Panduan implementasi upload gambar menggunakan jQuery Ajax pada tui Editor dengan integrasi server-side PHP"
+date: "2019-04-18T06:57:18+07:00"
+highlight: false
+draft: false 
+tags:
+  - jquery
+  - ajax
+  - markdown
+  - tui-editor
+cover: /assets/images/uploads/2019/04/ajax-jquery.jpg
 author: yadi
-categories: [ programing ]
-tags: [ jquery, ajax, markdown, tui editor ]
-image: assets/images/uploads/2019/04/ajax-jquery.jpg
-date: 2019-04-18 06:57:18 +07:00
 ---
 
 Hi sobat yadi, mau share sedikit tentang jQuery Ajax nih, udah pada tau tentu pastinya apa fungsi ajax ? kalau belum tau, semetara muter-muter mbah google dulu ya. Mungkin lain kali akan saya coba share di blog saya.

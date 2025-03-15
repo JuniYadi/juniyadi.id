@@ -1,11 +1,16 @@
 ---
-layout: post
 title: "Standarisasi Coding Dengan PSR (PSR-1 & PSR-2) & Cara Memperbaikinya"
+slug: standarisasi-coding-dengan-psr-psr-1-psr-2-cara-memperbaikinya
+description: "Panduan standarisasi coding PHP menggunakan PSR-1 dan PSR-2 dengan bantuan PHP-CS-Fixer"
+date: "2019-04-06T03:39:08+07:00"
+highlight: false
+draft: false
+tags:
+  - php
+  - psr
+  - php-cs-fixer
+cover: /assets/images/uploads/2019/04/php_psr.png
 author: yadi
-categories: [ programing ]
-tags: [ php, psr, php-cs-fixer ]
-image: assets/images/uploads/2019/04/php_psr.png
-date: 2019-04-06 03:39:08 +07:00
 ---
 
 Hi Sobat Yadi, kali ini saya akan share tentang standarisasi coding, standarisasi ini berguna agar setiap codingan yang kita buat jadi mudah dibaca dan dipahami.

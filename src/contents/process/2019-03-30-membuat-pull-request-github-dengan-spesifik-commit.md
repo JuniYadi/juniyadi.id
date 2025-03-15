@@ -1,11 +1,15 @@
 ---
-layout: post
 title: "Membuat Pull Request Github dengan Spesifik Commit"
+slug: membuat-pull-request-github-dengan-spesifik-commit
+description: "Tutorial membuat pull request di GitHub dengan memilih commit tertentu menggunakan git cherry-pick"
+date: "2019-03-30T12:03:25+07:00"
+highlight: false
+draft: false
+tags:
+  - git
+  - github
+cover: /assets/images/uploads/2019/03/Selection_00997.png
 author: yadi
-categories: [ tips and trick ]
-tags: [ git, github ]
-image: assets/images/uploads/2019/03/Selection_00997.png
-date: 2019-03-30 12:03:25 +07:00
 ---
 
 Hai sobat yadi, tentunya sudah ada yang mengenal tentang git dong ? secara langsung dari github saat ini belum menyediakan Pull Request dengan spesifik commit.

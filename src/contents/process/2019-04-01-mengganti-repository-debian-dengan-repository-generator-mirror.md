@@ -1,11 +1,18 @@
 ---
-layout: post
 title: "Mengganti Repository Debian dengan Repository Generator (Mirror)"
+slug: mengganti-repository-debian-dengan-repository-generator-mirror
+description: "Tutorial mengubah repository Debian menggunakan mirror server terdekat untuk akses yang lebih cepat"
+date: "2019-04-01T09:19:53+07:00"
+highlight: false
+draft: false
+tags:
+  - debian
+  - debian-6
+  - debian-7
+  - debian-8
+  - debian-9
+cover: /assets/images/uploads/2019/04/Selection_01006.png
 author: yadi
-categories: [ linux, system ]
-tags: [ debian, debian 6, debian 7, debian 8, debian 9 ]
-image: assets/images/uploads/2019/04/Selection_01006.png
-date: 2019-04-01 09:19:53 +07:00
 ---
 
 Hi sobat yadi, kali ini saya akan share cara mengganti repository debian dengan mudah dan simple. Kenapa harus mengganti repository debian ? tentu saja ini tidak wajib, tetapi jika repository kita rubah ke server lebih dekat, maka aksesnya atau update jadi lebih cepat.

@@ -1,11 +1,15 @@
 ---
-layout: post
 title: "Install Docker di Linux Debian 9 (Stretch) dengan CLI"
+slug: install-docker-di-linux-debian-9-stretch-dengan-cli
+description: "Panduan lengkap instalasi Docker di Debian 9 menggunakan command line interface (CLI)"
+date: "2019-03-29T07:47:38+07:00"
+highlight: false
+draft: false
+tags:
+  - docker
+  - debian
+cover: /assets/images/uploads/2019/03/docker-debian.png
 author: yadi
-categories: [ linux, system ]
-tags: [ docker, debian ]
-image: assets/images/uploads/2019/03/docker-debian.png
-date: 2019-03-29 07:47:38 +07:00
 ---
 
 Hi Sobat Yadi, kali ini saya akan menjelaskan cara install docker di linux debian 9 dengan cli (command line interface), anda bisa menginstall ini dari lokal komputer/ laptop anda, virtualisasi atau di server secara langsung.
