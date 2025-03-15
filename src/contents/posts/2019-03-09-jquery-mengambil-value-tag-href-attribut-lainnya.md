@@ -1,10 +1,11 @@
 ---
 title: "JQuery: Mengambil Value tag (href/attribut lainnya)"
 slug: jquery-mengambil-value-tag-href-attribut-lainnya
-description: "Tutorial mengambil nilai atribut HTML menggunakan jQuery dengan contoh kasus spesifik"
+description: "Panduan lengkap mengambil nilai atribut HTML menggunakan jQuery tanpa redirect, dengan contoh kasus praktis dan kode sampel."
 date: "2019-03-09T04:19:38+07:00"
 highlight: false
 draft: false
+categories: ["jQuery", "Tutorial"]
 tags:
   - jquery
   - frontend
