@@ -1,5 +1,9 @@
 ---
 title: "Memperbaiki Error Let's Encrypt Expired 30 September 2021 (DST Root CA X3)"
+slug: "memperbaiki-error-lets-encrypt-expired-30-september-2021-dst-root-ca-x3"
+description: "Halo sobat yadi, kali ini saya akan membahas permasalahan menarik seputar Let's Encrypt yang expired pada 30 September 2021 akibat peralihan sertifikat, solusi penting bagi pengguna OS lama."
+highlight: false
+draft: false
 author: yadi
 categories: [security, web-development]
 tags: [ssl, certificates, linux]
