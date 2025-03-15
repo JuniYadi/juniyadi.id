@@ -8,26 +8,15 @@ export const getContent = () => {
   return collection;
 };
 
-function validateTags(post: Post) {
-  const tagCount = post.tags.length;
-  if (tagCount < 1 || tagCount > 4) {
-    throw new Error(`Post "${post.title}" must have between 1 and 4 tags.`);
-  }
-}
-
 export const getAllPosts = (limit?: number) => {
-  const posts = limit ? getContent().limit(limit).getItemsArray() : getContent().getItemsArray();
-  
-  posts.forEach(validateTags); // Validate tags for each post
-  
+  const posts = limit
+    ? getContent().limit(limit).getItemsArray()
+    : getContent().getItemsArray();
   return posts;
 };
 
 export const getPostBySlug = (slug: string) => {
   const post = getContent().getOneBySlug(slug);
-  
-  validateTags(post); // Validate tags for the specific post
-  
   return post;
 };
 
