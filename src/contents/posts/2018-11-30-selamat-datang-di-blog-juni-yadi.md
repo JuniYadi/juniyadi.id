@@ -1,14 +1,14 @@
-# Please update this format AI!
-
 ---
-
-layout: post
 title: "Selamat Datang di Blog Juni Yadi"
+slug: selamat-datang-di-blog-juni-yadi
+description: "Perkenalan tentang blog Juni Yadi dan informasi kontak"
+date: "2018-11-30T07:36:24+07:00"
+highlight: false
+draft: false
+tags:
+  - about
+cover: /assets/images/uploads/2018/11/coding-writing.jpg
 author: yadi
-tags: [ about ]
-image: assets/images/uploads/2018/11/coding-writing.jpg
-date: 2018-11-30 07:36:24 +07:00
-
 ---
 
 Hi, perkenalkan nama saya _juni yadi_ atau bisa panggil saya _yadi_. Pada blog yang sederhana ini, saya akan share beberapa pengetahuan saya dibidang _System Administrator (Linux/Windows), Front-End Developer dan Back-End Developer_, tapi tidak menutup kemungkinan saya juga akan buat post diluar dari kategori tersebut.
