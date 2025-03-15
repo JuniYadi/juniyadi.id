@@ -13,20 +13,38 @@ const Navbar = () => {
     // Check if we're in the browser environment
     if (typeof window === "undefined") return;
 
-    // Check for user preference in localStorage or system preference
-    const isDarkMode =
-      localStorage.getItem("darkMode") === "true" ||
-      (window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches);
+    // First check localStorage
+    const storedPreference = localStorage.getItem("darkMode");
 
-    setDarkMode(isDarkMode);
+    // If there's a stored preference, use that
+    if (storedPreference !== null) {
+      const isDarkMode = storedPreference === "true";
+      setDarkMode(isDarkMode);
+
+      if (isDarkMode) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+      return;
+    }
+
+    // If no stored preference, fall back to system preference
+    const systemPrefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    setDarkMode(systemPrefersDark);
 
     // Apply dark mode to document
-    if (isDarkMode) {
+    if (systemPrefersDark) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
+
+    // Store the initial system preference
+    localStorage.setItem("darkMode", systemPrefersDark.toString());
   }, []);
 
   const toggleMenu = () => {

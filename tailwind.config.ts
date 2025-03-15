@@ -10,6 +10,14 @@ const config: Config = {
   darkMode: "class", // Use class strategy for dark mode
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: false,
+            code: false,
+          },
+        },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

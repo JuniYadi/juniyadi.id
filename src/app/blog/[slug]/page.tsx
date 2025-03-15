@@ -4,6 +4,10 @@ import matter from "gray-matter";
 import FusionCollection from "fusionable/FusionCollection";
 // import mdxComponents from "@/components/mdx-components";
 
+// import "highlight.js/styles/github.css";
+import "highlight.js/styles/github-dark.css";
+import "./styles.css";
+
 // plugins inject
 import remarkGfm from "remark-gfm";
 // import remarkGithub from "remark-github";
@@ -13,6 +17,8 @@ import rehypeSanitize from "rehype-sanitize";
 import rehypeHighlight from "rehype-highlight";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeToc from "rehype-toc";
+import rehypeCodeLine from "rehype-highlight-code-lines";
+import rehypePrettyCode from "rehype-pretty-code";
 
 const options = {
   mdxOptions: {
@@ -22,9 +28,11 @@ const options = {
     rehypePlugins: [
       rehypeSanitize,
       rehypeSlug,
-      rehypeHighlight,
-      rehypeAutolinkHeadings,
       rehypeToc,
+      rehypeHighlight,
+      [rehypeCodeLine, { showLineNumbers: true }] as never,
+      rehypeAutolinkHeadings,
+      rehypePrettyCode,
     ],
   },
 };
