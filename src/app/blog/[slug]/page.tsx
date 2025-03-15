@@ -31,9 +31,6 @@ export async function generateMetadata({
 
     const itemContent = fileContent.getItem();
 
-    // Validate tags
-    validateTags(itemContent.fields);
-
     return {
       title: itemContent.fields.title,
       description: itemContent.fields.description || itemContent.fields.title,
