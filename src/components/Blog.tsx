@@ -19,7 +19,7 @@ export default function Blog() {
               key={post.id}
               className="block border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 transition-colors overflow-hidden flex flex-col h-full bg-white dark:bg-gray-800"
             >
-              <div className="relative h-48 w-full">
+              <div className="relative h-40 w-full">
                 <Image
                   src={post.fields.cover}
                   alt={post.fields.title}
@@ -46,7 +46,7 @@ export default function Blog() {
                   {post.fields.description}
                 </p>
                 <Link
-                  href={`/blog/${post.slug}`}
+                  href={`/blog/${post.fields.slug}`}
                   className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium mt-auto"
                 >
                   Read more →
