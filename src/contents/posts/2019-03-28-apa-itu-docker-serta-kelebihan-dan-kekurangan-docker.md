@@ -6,10 +6,10 @@ date: "2019-03-28T21:35:10+07:00"
 highlight: false 
 draft: false
 tags:
-  - docker
-  - containerization
-  - tutorial
-  - containers
+  - Docker
+  - Containerization
+  - Deployment
+  - Efficiency
 category: Docker
 cover: /assets/images/uploads/2019/03/docker.png
 author: yadi
