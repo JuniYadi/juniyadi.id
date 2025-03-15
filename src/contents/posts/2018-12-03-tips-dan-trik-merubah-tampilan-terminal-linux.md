@@ -1,7 +1,7 @@
 ---
 title: "Tips dan Trik Merubah Tampilan Terminal Linux"
 slug: tips-dan-trik-merubah-tampilan-terminal-linux
-description: "Panduan mengkostumisasi terminal Linux dengan tips tampilan dan konfigurasi yang berguna"
+description: "Panduan lengkap untuk mengkostumisasi tampilan terminal Linux dengan trik mengganti font, warna, dan menampilkan info sistem guna meningkatkan pengalaman pengguna."
 date: "2018-12-03T11:17:20+07:00"
 highlight: false
 draft: false
@@ -11,6 +11,7 @@ tags:
   - customization
 cover: /assets/images/uploads/2018/12/terminal-linux.jpg
 author: yadi
+categories: ["Linux", "Terminal", "Customization"]
 ---
 
 Sobat Yadi, jika anda saat ini menggunakan linux, tentu sudah tidak asing lagi dengan terminal linux, tunggu dulu, terminal disini bukan terminal bus angkutan kota antar provinsi atau terminal colokan listrik ya.
