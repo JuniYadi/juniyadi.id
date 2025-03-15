@@ -1,16 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import FusionCollection from "fusionable/FusionCollection";
-
-function getBlogPosts() {
-  const collection = new FusionCollection()
-    .loadFromDir("src/contents/posts")
-    .orderBy("date", "desc");
-  return collection.getItemsArray();
-}
+import { getAllPosts } from "@/lib/posts";
 
 export default async function BlogPage() {
-  const _posts = getBlogPosts();
+  const _posts = getAllPosts();
 
   return (
     <div className="container mx-auto py-10 px-4">
