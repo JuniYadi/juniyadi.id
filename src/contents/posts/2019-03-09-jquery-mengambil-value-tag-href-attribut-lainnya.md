@@ -7,8 +7,10 @@ highlight: false
 draft: false
 categories: ["jQuery", "Tutorial"]
 tags:
-  - jquery
-  - frontend
+  - jQuery
+  - JavaScript
+  - HTML
+  - Tutorial
 cover: /assets/images/uploads/2019/03/jquery.png
 author: yadi
 ---
