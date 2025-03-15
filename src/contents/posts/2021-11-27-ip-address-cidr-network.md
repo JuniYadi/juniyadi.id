@@ -7,9 +7,10 @@ highlight: false
 draft: false
 category: networking
 tags:
-  - ip
-  - cidr
-  - networking
+  - "IP Address"
+  - "CIDR"
+  - "Networking"
+  - "Local IP"
 cover: /assets/images/uploads/2021/11/network.jpg
 author: yadi
 ---
