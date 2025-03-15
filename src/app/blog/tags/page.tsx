@@ -3,23 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { formatDateTime } from "@/lib/date";
 import { s } from "@/lib/slug";
-import { search } from "deepsearchjs";
-import { notFound } from "next/navigation";
 
-export default async function Page({
-  searchParams,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}) {
-  const q = (await searchParams).q as string;
+export default async function Page() {
   const contents = getPostsWithGrouped("tags", "array");
-  const filter = q ? search(contents, new RegExp(q, "gi")) : contents;
-
-  console.log("filter", q, filter);
-
-  if (Object.keys(contents).length === 0) {
-    notFound();
-  }
 
   return (
     <div className="container mx-auto py-10 px-4">
