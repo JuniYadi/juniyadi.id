@@ -1,7 +1,7 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 import matter from "gray-matter";
-import FusionCollection from "fusionable/FusionCollection";
+import { Metadata } from "next";
 
 import "highlight.js/styles/github-dark.css";
 import "./styles.css";
@@ -15,6 +15,11 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeToc from "rehype-toc";
 import rehypeHighlight from "rehype-highlight";
 import rehypeCodeLine from "rehype-highlight-code-lines";
+import { getAllPosts, getPostBySlug } from "@/lib/posts";
+
+// Force static generation
+export const dynamic = "force-static";
+export const revalidate = false;
 
 const options = {
   mdxOptions: {
@@ -30,31 +35,60 @@ const options = {
   },
 };
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const { slug } = params;
+
+  try {
+    const fileContent = getPostBySlug(slug);
+
+    if (!fileContent) {
+      return {
+        title: "Post Not Found",
+      };
+    }
+
+    const itemContent = fileContent.getItem();
+
+    return {
+      title: itemContent.fields.title,
+      description: itemContent.fields.description || itemContent.fields.title,
+      openGraph: {
+        title: itemContent.fields.title,
+        description: itemContent.fields.description || itemContent.fields.title,
+        type: "article",
+        publishedTime: itemContent.fields.date,
+        authors: ["Juni Yadi"],
+      },
+    };
+  } catch (e) {
+    const error = e as Error;
+    return {
+      title: error.message || "Error loading blog post",
+    };
+  }
+}
+
 export async function generateStaticParams() {
-  const collection = new FusionCollection()
-    .loadFromDir("src/contents/posts")
-    .orderBy("date", "desc");
-  const posts = collection.getItemsArray();
+  const posts = getAllPosts();
 
   return posts.map((p) => ({
     slug: p.fields.slug,
   }));
 }
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
+export default function Page({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   // Check if slug is defined
   if (!slug) {
     notFound();
   }
 
   try {
-    const collection = new FusionCollection().loadFromDir("src/contents/posts");
-    const fileContent = collection.getOneBySlug(slug);
+    const fileContent = getPostBySlug(slug);
 
     if (!fileContent) {
       notFound();
@@ -73,11 +107,7 @@ export default async function Page({
             {itemContent.fields.date &&
               new Date(itemContent.fields.date).toLocaleString()}
           </div>
-          <MDXRemote
-            source={content}
-            // components={mdxComponents}
-            options={options}
-          />
+          <MDXRemote source={content} options={options} />
         </article>
       </div>
     );
