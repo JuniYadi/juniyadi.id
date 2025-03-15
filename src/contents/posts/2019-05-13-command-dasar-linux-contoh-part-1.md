@@ -1,5 +1,9 @@
 ---
 title: "Command Dasar Linux + Contoh [PART-1]"
+slug: command-dasar-linux-contoh-part-1
+description: "Panduan dasar command Linux dengan penjelasan perintah pwd, cd, ls, mkdir, vi, rm, dan rmdir untuk pengguna pemula."
+highlight: false
+draft: false
 author: yadi
 categories: [linux]
 tags: [bash, terminal]
