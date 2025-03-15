@@ -42,8 +42,8 @@ export const getPostsWithGrouped = (
   const groups: Grouped = {};
 
   for (const post of content) {
-    if (valKey === "array") {
-      if (post["fields"][objectKey]) {
+    if (post["fields"][objectKey]) {
+      if (valKey === "array") {
         for (const val of post["fields"][objectKey]) {
           const sVal = s(val);
           if (!groups[sVal]) {
@@ -62,6 +62,23 @@ export const getPostsWithGrouped = (
 
           groups[sVal].push(postItem);
         }
+      } else {
+        const sVal = s(post["fields"][objectKey]);
+        if (!groups[sVal]) {
+          groups[sVal] = [];
+        }
+
+        const postItem: Post = {
+          title: post.fields.title,
+          slug: post.fields.slug,
+          date: post.fields.date,
+          cover: post.fields.cover,
+          description: post.fields.description,
+          category: post.fields.category,
+          tags: post.fields.tags,
+        };
+
+        groups[sVal].push(postItem);
       }
     }
   }
