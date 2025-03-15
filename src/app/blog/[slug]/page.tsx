@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import matter from "gray-matter";
 import { Metadata } from "next";
 import Image from "next/image";
+import Comments from "@/components/Comments";
+import { s } from "@/lib/slug";
 
 import "highlight.js/styles/github-dark.css";
 import "./styles.css";
@@ -17,6 +19,7 @@ import rehypeToc from "rehype-toc";
 import rehypeHighlight from "rehype-highlight";
 import rehypeCodeLine from "rehype-highlight-code-lines";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
+import { formatDateTime } from "@/lib/date";
 
 // Force static generation
 export const dynamic = "force-static";
@@ -101,45 +104,55 @@ export default function Page({ params }: { params: { slug: string } }) {
     const { content } = matter(itemContent.content);
 
     return (
-      <div className="container mx-auto py-10 px-4">
-        <article className="prose prose-lg lg:prose-xl dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 mx-auto max-w-4xl w-full">
-          <Image
-            src={itemContent.fields.cover}
-            alt={itemContent.fields.title}
-            width={1600}
-            height={800}
-            className="mb-8 w-full"
-          />
-          <h1>{itemContent.fields.title}</h1>
-          <div className="text-sm text-gray-500 mb-2">
-            Posted by {itemContent.fields.author} at{" "}
-            {itemContent.fields.date &&
-              new Date(itemContent.fields.date).toLocaleString()}
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 gap-8">
+          {/* Main content - blog post - now full width */}
+          <main className="prose prose-lg dark:prose-invert max-w-none">
+            <article className="prose prose-lg lg:prose-xl dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 mx-auto max-w-4xl w-full">
+              <Image
+                src={itemContent.fields.cover}
+                alt={itemContent.fields.title}
+                width={640} // further reduced width
+                height={360} // further reduced height
+                className="mb-8 w-full"
+              />
+              <h1>{itemContent.fields.title}</h1>
+              <div className="text-sm text-gray-500 mb-2">
+                Posted by {itemContent.fields.author} at{" "}
+                {itemContent.fields.date &&
+                  formatDateTime(itemContent.fields.date)}
+              </div>
+              <div className="text-sm text-gray-500 mb-2">
+                Categories:{" "}
+                <a
+                  key={`category-${s(itemContent.fields.category)}`}
+                  href={`/categories/${s(itemContent.fields.category)}`}
+                  className="inline-block bg-blue-500 hover:bg-blue-700 text-white text-xs px-2 py-1 rounded-full mr-2"
+                >
+                  {itemContent.fields.category}
+                </a>
+              </div>
+              <div className="text-sm text-gray-500 mb-2">
+                Tags:{" "}
+                {itemContent.fields.tags.map((tag: string) => (
+                  <a
+                    key={`tag-${s(tag)}`}
+                    href={`/tags/${s(tag)}`}
+                    className="inline-block bg-gray-500 hover:bg-gray-700 text-white text-xs px-2 py-1 rounded-full mr-2"
+                  >
+                    #{s(tag)}
+                  </a>
+                ))}
+              </div>
+              <MDXRemote source={content} options={options} />
+            </article>
+          </main>
+
+          {/* Comments section - below the content */}
+          <div className="mt-12 pt-8 border-t">
+            <Comments />
           </div>
-          <div className="text-sm text-gray-500 mb-2">
-            Categories:{" "}
-            <a
-              key={itemContent.fields.category}
-              href={`/categories/${itemContent.fields.category}`}
-              className="inline-block bg-blue-500 hover:bg-blue-700 text-white text-xs px-2 py-1 rounded-full mr-2"
-            >
-              {itemContent.fields.category}
-            </a>
-          </div>
-          <div className="text-sm text-gray-500 mb-2">
-            Tags:{" "}
-            {itemContent.fields.tags.map((tag: string) => (
-              <a
-                key={tag}
-                href={`/tags/${tag}`}
-                className="inline-block bg-gray-500 hover:bg-gray-700 text-white text-xs px-2 py-1 rounded-full mr-2"
-              >
-                #{tag}
-              </a>
-            ))}
-          </div>
-          <MDXRemote source={content} options={options} />
-        </article>
+        </div>
       </div>
     );
   } catch (error) {
