@@ -1,10 +1,11 @@
 ---
 title: "Standarisasi Coding Dengan PSR (PSR-1 & PSR-2) & Cara Memperbaikinya"
 slug: standarisasi-coding-dengan-psr-psr-1-psr-2-cara-memperbaikinya
-description: "Panduan standarisasi coding PHP menggunakan PSR-1 dan PSR-2 dengan bantuan PHP-CS-Fixer"
+description: "Panduan lengkap untuk meningkatkan kualitas coding dengan menerapkan PSR-1 & PSR-2 serta menggunakan PHP-CS-Fixer untuk memperbaiki gaya penulisan kode PHP."
 date: "2019-04-06T03:39:08+07:00"
 highlight: false
 draft: false
+category: "Coding Standards"
 tags:
   - php
   - psr

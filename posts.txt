@@ -8,3 +8,4 @@ src/contents/posts/2018-12-03-tips-dan-trik-merubah-tampilan-terminal-linux.md
 src/contents/posts/2019-03-08-laravel-relationship-memanggil-data-dari-database-lain-berdasarkan-localkey.md
 src/contents/posts/2019-03-28-apa-itu-docker-serta-kelebihan-dan-kekurangan-docker.md
 src/contents/posts/2019-03-29-install-docker-di-linux-debian-9-stretch-dengan-cli.md
+src/contents/posts/2019-04-06-standarisasi-coding-dengan-psr-psr-1-psr-2-cara-memperbaikinya.md
