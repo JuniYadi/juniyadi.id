@@ -7,8 +7,10 @@ highlight: false
 draft: false
 category: Tutorial
 tags:
-  - bot
-  - telegram
+  - Telegram
+  - Bot
+  - Tutorial
+  - API
 cover: /assets/images/uploads/2018/11/Tutorial-Membuat-Bot-Telegram-Tombol-Start.png
 author: yadi
 ---
