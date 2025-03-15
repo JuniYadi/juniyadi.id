@@ -7,9 +7,10 @@ highlight: false
 draft: false
 category: "Coding Standards"
 tags:
-  - php
-  - psr
-  - php-cs-fixer
+  - PHP
+  - Coding Standards
+  - PSR
+  - PHP-CS-Fixer
 cover: /assets/images/uploads/2019/04/php_psr.png
 author: yadi
 ---
