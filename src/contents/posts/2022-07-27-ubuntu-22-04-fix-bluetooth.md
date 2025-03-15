@@ -7,10 +7,10 @@ highlight: false
 draft: false
 category: ubuntu
 tags:
-  - ubuntu
-  - bluetooth
-  - audio
-  - pulseaudio
+  - Ubuntu
+  - Bluetooth
+  - Audio
+  - PulseAudio
 cover: /assets/images/uploads/2022/07/ubuntu-bluetooth.png
 author: yadi
 ---
