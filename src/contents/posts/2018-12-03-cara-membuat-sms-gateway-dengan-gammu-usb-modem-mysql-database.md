@@ -6,10 +6,10 @@ date: "2018-12-03T05:25:26+07:00"
 highlight: false
 draft: false
 tags:
-  - gammu
-  - mysql
-  - sms gateway
-  - usb modem
+  - SMS Gateway
+  - Gammu
+  - USB Modem
+  - MySQL
 cover: /assets/images/uploads/2018/12/sms-gateway.jpg
 author: yadi
 ---
