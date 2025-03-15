@@ -5,10 +5,11 @@ description: "Daftar rekomendasi tools dan addons browser untuk membantu pekerja
 date: "2018-12-01T19:46:00+07:00"
 highlight: false
 draft: false
+categories: ["Software Tools", "Development"]
 tags:
   - software
   - dasar
-  - addons browser
+  - addons-browser
 cover: /assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer.jpg
 author: yadi
 ---
