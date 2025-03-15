@@ -6,7 +6,7 @@ import FusionCollection from "fusionable/FusionCollection";
 
 // import "highlight.js/styles/github.css";
 import "highlight.js/styles/github-dark.css";
-import "./styles.css";
+// import "./styles.css";
 
 // plugins inject
 import remarkGfm from "remark-gfm";
@@ -14,11 +14,11 @@ import remarkGfm from "remark-gfm";
 import remarkEmoji from "remark-emoji";
 import rehypeSlug from "rehype-slug";
 import rehypeSanitize from "rehype-sanitize";
-import rehypeHighlight from "rehype-highlight";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeToc from "rehype-toc";
+import rehypeHighlight from "rehype-highlight";
 import rehypeCodeLine from "rehype-highlight-code-lines";
-import rehypePrettyCode from "rehype-pretty-code";
+// import rehypePrettyCode from "rehype-pretty-code";
 
 const options = {
   mdxOptions: {
@@ -29,10 +29,10 @@ const options = {
       rehypeSanitize,
       rehypeSlug,
       rehypeToc,
+      rehypeAutolinkHeadings,
       rehypeHighlight,
       [rehypeCodeLine, { showLineNumbers: true }] as never,
-      rehypeAutolinkHeadings,
-      rehypePrettyCode,
+      // rehypePrettyCode,
     ],
   },
 };
