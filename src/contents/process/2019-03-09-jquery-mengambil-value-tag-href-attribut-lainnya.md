@@ -1,11 +1,15 @@
 ---
-layout: post
 title: "JQuery: Mengambil Value tag (href/attribut lainnya)"
+slug: jquery-mengambil-value-tag-href-attribut-lainnya
+description: "Tutorial mengambil nilai atribut HTML menggunakan jQuery dengan contoh kasus spesifik"
+date: "2019-03-09T04:19:38+07:00"
+highlight: false
+draft: false
+tags:
+  - jquery
+  - frontend
+cover: /assets/images/uploads/2019/03/jquery.png
 author: yadi
-categories: [ programing ]
-tags: [ jquery ]
-image: assets/images/uploads/2019/03/jquery.png
-date: 2019-03-09 04:19:38 +07:00
 ---
 
 Hi Sobat Yadi, Pada case kali ini, saya ingin mengambil sebuah value dari tag href menggunakan jquery. Mungkin bagi anda yang masih belum terbiasa jquery, bisa mempelajari dasarnya terlebih dahulu.

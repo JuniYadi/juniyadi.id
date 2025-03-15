@@ -1,11 +1,16 @@
 ---
-layout: post
 title: "Laravel Relationship: Memanggil data dari database lain berdasarkan localkey"
+slug: laravel-relationship-memanggil-data-dari-database-lain-berdasarkan-localkey
+description: "Implementasi relasi database di Laravel dengan kunci lokal kustom"
+date: "2019-03-08T04:54:38+07:00"
+highlight: false
+draft: false
+tags:
+  - laravel
+  - php
+  - database
+cover: /assets/images/uploads/2018/12/Tutorial-Dasar-Menggunakan-Framework-Laravel.png
 author: yadi
-categories: [ programing ]
-tags: [ laravel, php, beginner ]
-image: assets/images/uploads/2018/12/Tutorial-Dasar-Menggunakan-Framework-Laravel.png
-date: 2019-03-08 04:54:38 +07:00
 ---
 
 Hi sobat yadi, sudah lama tidak update, beberapa hari ini sedang melakukan case tentang laravel relationship tentu saja menggunakan eloquent.

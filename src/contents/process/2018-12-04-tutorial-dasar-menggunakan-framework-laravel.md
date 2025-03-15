@@ -1,11 +1,16 @@
 ---
-layout: post
 title: "Tutorial Dasar Menggunakan Framework Laravel"
+slug: tutorial-dasar-menggunakan-framework-laravel
+description: "Panduan awal untuk memulai pengembangan web menggunakan framework Laravel PHP"
+date: "2018-12-04T06:42:16+07:00" 
+highlight: false
+draft: false
+tags:
+  - laravel
+  - php
+  - beginner
+cover: /assets/images/uploads/2018/12/Tutorial-Dasar-Menggunakan-Framework-Laravel.png
 author: yadi
-categories: [ programing ]
-tags: [ laravel, php, beginner ]
-image: assets/images/uploads/2018/12/Tutorial-Dasar-Menggunakan-Framework-Laravel.png
-date: 2018-12-04 06:42:16 +07:00
 ---
 
 Sebagai developer website, kita tentu saja sering mendengar tentang framework-framework yang bisa digunakan, pada pembahasan ini, kita akan membahas salah satu framework populer di developer indonesia atau dunia, yaitu laravel.

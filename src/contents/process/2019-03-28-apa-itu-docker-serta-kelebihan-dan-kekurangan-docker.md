@@ -1,11 +1,15 @@
 ---
-layout: post
 title: "Apa itu Docker ? Serta Kelebihan dan Kekurangan Docker ?"
+slug: apa-itu-docker-serta-kelebihan-dan-kekurangan-docker
+description: "Penjelasan tentang teknologi Docker dan analisis kelebihan/kekurangannya untuk pengembangan aplikasi"
+date: "2019-03-28T21:35:10+07:00"
+highlight: false 
+draft: false
+tags:
+  - docker
+  - containerization
+cover: /assets/images/uploads/2019/03/docker.png
 author: yadi
-categories: [ linux, system ]
-tags: [ docker ]
-image: assets/images/uploads/2019/03/docker.png
-date: 2019-03-28 21:35:10 +07:00
 ---
 
 Pada awalnya ketika kita ingin membuat sebuah website tentunya di pusingkan dengan beberapa settingan seperti install web server, database, php/ruby/dkk.
