@@ -1,13 +1,16 @@
 ---
 title: "Install Docker di Linux Debian 9 (Stretch) dengan CLI"
 slug: install-docker-di-linux-debian-9-stretch-dengan-cli
-description: "Panduan lengkap instalasi Docker di Debian 9 menggunakan command line interface (CLI)"
+description: "Panduan instalasi Docker di Debian 9 menggunakan CLI yang mencakup update, instalasi paket, konfigurasi repository, dan pengelolaan container nginx."
 date: "2019-03-29T07:47:38+07:00"
 highlight: false
 draft: false
+category: docker
 tags:
   - docker
   - debian
+  - cli
+  - tutorial
 cover: /assets/images/uploads/2019/03/docker-debian.png
 author: yadi
 ---
