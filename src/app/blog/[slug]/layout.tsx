@@ -1,5 +1,6 @@
 import React from "react";
 import Comments from "@/components/Comments";
+import { getTocBySlug } from "@/lib/toc";
 
 interface BlogPostLayoutProps {
   children: React.ReactNode;
@@ -12,7 +13,9 @@ export default function BlogPostLayout({
   children,
   params,
 }: BlogPostLayoutProps) {
-  console.log("layout params", params);
+  const content = getTocBySlug(params.slug);
+  console.log("content", content);
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -23,15 +26,13 @@ export default function BlogPostLayout({
 
         {/* Right sidebar - Table of Contents */}
         <aside className="lg:col-span-3 hidden lg:block">
-          <div className="sticky top-20">
+          {/* <div className="sticky top-20">
             <h3 className="font-bold text-lg mb-4">Table of Contents</h3>
             <div id="table-of-contents" className="text-sm">
-              {/* Table of contents will be populated by JS or from MDX frontmatter */}
-              <p className="text-muted-foreground text-sm">
-                Loading table of contents...
-              </p>
+              TABLE_OF_CONTENTS
             </div>
-          </div>
+          </div> */}
+          TABLE_OF_CONTENTS
         </aside>
 
         {/* Comments section - spans full width below the content */}

@@ -22,10 +22,10 @@ const options = {
     rehypePlugins: [
       rehypeSanitize,
       rehypeSlug,
-      rehypeToc,
       rehypeAutolinkHeadings,
       rehypeHighlight,
       [rehypeCodeLine, { showLineNumbers: true }] as never,
+      rehypeToc,
     ],
   },
 };
