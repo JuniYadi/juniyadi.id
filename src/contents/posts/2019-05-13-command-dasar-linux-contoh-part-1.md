@@ -5,8 +5,12 @@ description: "Panduan dasar command Linux dengan penjelasan perintah pwd, cd, ls
 highlight: false
 draft: false
 author: yadi
-categories: [linux]
-tags: [bash, terminal]
+category: linux
+tags:
+  - linux
+  - bash
+  - command-line
+  - tutorial
 cover: "/assets/images/uploads/2019/05/Selection_01146.png"
 date: "2019-05-13T04:46:47+07:00"
 featured: false
