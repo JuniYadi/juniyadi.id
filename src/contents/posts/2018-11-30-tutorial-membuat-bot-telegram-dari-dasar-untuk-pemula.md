@@ -6,10 +6,7 @@ date: "2018-11-30T08:10:27+07:00"
 highlight: false 
 draft: false
 category: Tutorial
-tags:
-  - bot
-  - php
-  - tutorial
+tags: ["Telegram", "Bot", "Beginner", "Tutorial"]
 cover: /assets/images/uploads/2018/11/telegram-bot.jpg
 author: yadi
 ---
