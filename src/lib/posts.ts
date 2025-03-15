@@ -1,10 +1,7 @@
 import FusionCollection from "fusionable/FusionCollection";
 
 export const getContent = () => {
-  const collection = new FusionCollection()
-    .loadFromDir("src/contents/posts")
-    .orderBy("date", "desc");
-
+  const collection = new FusionCollection().loadFromDir("src/contents/posts");
   return collection;
 };
 
