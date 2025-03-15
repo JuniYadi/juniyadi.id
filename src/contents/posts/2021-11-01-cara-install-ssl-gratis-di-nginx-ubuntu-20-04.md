@@ -1,10 +1,12 @@
 ---
 title: "Cara Install SSL Gratis di Nginx Ubuntu 20.04"
 slug: cara-install-ssl-gratis-di-nginx-ubuntu-20-04
-description: "Panduan instalasi sertifikat SSL gratis menggunakan ZeroSSL pada Nginx"
+description: "Panduan lengkap instalasi SSL gratis di Nginx pada Ubuntu 20.04 menggunakan ZeroSSL, mencakup persyaratan dan langkah eksekusi perintah dengan acme.sh."
 date: "2021-11-01T13:00:00+07:00"
 highlight: false
-draft: true
+draft: false
+categories:
+  - Tutorial
 tags:
   - linux
   - nginx

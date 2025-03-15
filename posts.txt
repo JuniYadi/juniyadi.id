@@ -6,3 +6,4 @@ src/contents/posts/2019-03-28-apa-itu-docker-serta-kelebihan-dan-kekurangan-dock
 src/contents/posts/2019-04-18-tui-editor-jquery-ajax-image-upload-to-server.md
 src/contents/posts/2019-05-13-command-dasar-linux-contoh-part-1.md
 src/contents/posts/2019-10-08-goodbye-wordpress.md
+src/contents/posts/2021-11-01-cara-install-ssl-gratis-di-nginx-ubuntu-20-04.md
