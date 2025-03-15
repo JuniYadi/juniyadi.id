@@ -1,14 +1,15 @@
 ---
 title: "Rekomendasi Software Editor atau Addons Browser Untuk Programer (Front atau Back End)"
 slug: rekomendasi-software-editor-atau-addons-browser-untuk-programer-front-back-end
-description: "Daftar rekomendasi tools dan addons browser untuk membantu pekerjaan development"
+description: "Daftar rekomendasi software editor dan addons browser yang nyaman dan ringan untuk mengoptimalkan coding front dan back end."
 date: "2018-12-01T19:46:00+07:00"
 highlight: false
 draft: false
-categories: ["Software Tools", "Development"]
+category: Software Tools
 tags:
   - software
-  - dasar
+  - editor
+  - programming
   - addons-browser
 cover: /assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer.jpg
 author: yadi
