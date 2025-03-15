@@ -3,7 +3,7 @@ title: "Ubuntu 22.04 Fix Bluetooth"
 slug: ubuntu-22-04-fix-bluetooth
 description: "Panduan memperbaiki kualitas audio Bluetooth di Ubuntu 22.04: instalasi pulseaudio, konfigurasi Bluetooth dan restart layanan untuk koneksi optimal."
 date: "2022-07-27T10:00:00+07:00"
-highlight: false 
+highlight: false
 draft: false
 categories:
   - linux
@@ -29,7 +29,7 @@ Berikut cara memperbaikinya.
 
 ## Install Pulse Audio
 
-```
+```bash
 sudo apt install pulseaudio pulseaudio-utils pavucontrol pulseaudio-module-bluetooth
 ```
 
@@ -37,13 +37,13 @@ sudo apt install pulseaudio pulseaudio-utils pavucontrol pulseaudio-module-bluet
 
 - Edit konfigurasi pada file `main.conf`
 
-```
+```bash
 sudo nano /etc/bluetooth/main.conf
 ```
 
 - Dibawah **[GENERAL]**, Pastekan skrip berikut
 
-```
+```conf
 [General]
 
 # Automatically connect both A2DP and HFP/HSP profiles for incoming
@@ -55,13 +55,13 @@ AutoConnect=true
 
 - Kemudian Ubah Line menjadi seperti Berikut
 
-```
+```bash
 MultiProfile = multiple
 ```
 
 - Restart Bluetooth
 
-```
+```bash
 sudo systemctl restart bluetooth
 ```
 
