@@ -8,9 +8,9 @@ draft: false
 category: server
 tags:
   - server
-  - konfigurasi
-  - cms
-  - wordpress
+  - configuration
+  - CMS
+  - WordPress
 cover: "/assets/images/uploads/2018/11/server.jpg"
 author: "yadi"
 ---
