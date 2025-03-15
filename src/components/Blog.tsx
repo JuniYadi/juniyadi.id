@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
+import { formatDateTime } from "@/lib/date";
 
 export default function Blog() {
   // Blog posts data with Picsum images
@@ -39,8 +40,7 @@ export default function Blog() {
                   </h3>
                 </div>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                  {post.fields.date &&
-                    new Date(post.fields.date).toLocaleString()}
+                  {post.fields.date && formatDateTime(post.fields.date)}
                 </p>
                 <p className="text-sm line-clamp-2 mb-3 flex-grow text-gray-700 dark:text-gray-300">
                   {post.fields.description}
