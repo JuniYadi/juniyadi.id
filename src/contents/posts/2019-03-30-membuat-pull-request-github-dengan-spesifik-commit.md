@@ -1,10 +1,11 @@
 ---
 title: "Membuat Pull Request Github dengan Spesifik Commit"
 slug: membuat-pull-request-github-dengan-spesifik-commit
-description: "Tutorial membuat pull request di GitHub dengan memilih commit tertentu menggunakan git cherry-pick"
+description: "Tutorial ini menjelaskan cara membuat pull request di GitHub dengan memilih commit spesifik menggunakan git cherry-pick, langkah-langkah dijelaskan secara rinci."
 date: "2019-03-30T12:03:25+07:00"
 highlight: false
 draft: false
+categories: [Tutorial]
 tags:
   - git
   - github
