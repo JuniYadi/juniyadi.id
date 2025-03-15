@@ -5,3 +5,4 @@ src/contents/posts/2018-12-04-tutorial-dasar-menggunakan-framework-laravel.md
 src/contents/posts/2019-03-28-apa-itu-docker-serta-kelebihan-dan-kekurangan-docker.md
 src/contents/posts/2019-04-18-tui-editor-jquery-ajax-image-upload-to-server.md
 src/contents/posts/2019-05-13-command-dasar-linux-contoh-part-1.md
+src/contents/posts/2019-10-08-goodbye-wordpress.md
