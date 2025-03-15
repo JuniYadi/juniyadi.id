@@ -8,11 +8,11 @@ draft: false
 tags:
   - docker
   - containerization
+  - tutorial
+  - containers
+category: Docker
 cover: /assets/images/uploads/2019/03/docker.png
 author: yadi
-categories:
-  - Tutorial
-  - Docker
 ---
 
 Pada awalnya ketika kita ingin membuat sebuah website tentunya di pusingkan dengan beberapa settingan seperti install web server, database, php/ruby/dkk.
