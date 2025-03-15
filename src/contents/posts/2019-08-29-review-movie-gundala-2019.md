@@ -1,8 +1,12 @@
 ---
 title: "Review Movie: Gundala (2019)"
 author: yadi
-categories: [entertainment]
-tags: [indonesian-cinema, superhero]
+category: entertainment
+slug: review-movie-gundala-2019
+description: "In-depth review of Gundala (2019) exploring its cinematic appeal, dynamic action sequences, and refreshing take on Indonesian superhero storytelling."
+highlight: false
+draft: false
+tags: [indonesian-cinema, superhero, review, film]
 cover: "/assets/images/uploads/2019/09/gundala.jpg"
 date: "2019-08-29T20:46:14+07:00"
 featured: false
