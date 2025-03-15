@@ -7,9 +7,10 @@ highlight: false
 draft: false
 category: Laravel
 tags:
-  - laravel
-  - php
-  - database
+  - Laravel
+  - Eloquent
+  - Database
+  - Relationships
 cover: /assets/images/uploads/2018/12/Tutorial-Dasar-Menggunakan-Framework-Laravel.png
 author: yadi
 ---
