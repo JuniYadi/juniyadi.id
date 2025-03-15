@@ -10,3 +10,4 @@ src/contents/posts/2019-03-28-apa-itu-docker-serta-kelebihan-dan-kekurangan-dock
 src/contents/posts/2019-03-29-install-docker-di-linux-debian-9-stretch-dengan-cli.md
 src/contents/posts/2019-04-06-standarisasi-coding-dengan-psr-psr-1-psr-2-cara-memperbaikinya.md
 src/contents/posts/2019-05-13-command-dasar-linux-contoh-part-1.md
+src/contents/posts/2022-07-27-ubuntu-22-04-fix-bluetooth.md
