@@ -1,10 +1,11 @@
 ---
 title: "Tutorial Membuat Bot Telegram Membuat Bot [Bagian 1]"
 slug: tutorial-membuat-bot-telegram-membuat-bot-bagian-1
-description: "Panduan langkah demi langkah membuat bot Telegram menggunakan BotFather"
+description: "Panduan langkah demi langkah mengajarkan cara membuat bot Telegram lengkap dengan pengaturan, command, dan tips praktis."
 date: "2018-11-30T09:46:14+07:00"
 highlight: false
 draft: false
+category: Tutorial
 tags:
   - bot
   - telegram
