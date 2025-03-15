@@ -5,12 +5,15 @@ description: "Informasi mengenai spesifikasi server dan konfigurasi website yang
 date: "2018-11-30T07:50:28+07:00"
 highlight: false
 draft: false
+categories:
+  - "server"
+  - "cms"
 tags:
-  - about
-  - server
-  - cms
-cover: /assets/images/uploads/2018/11/server.jpg
-author: yadi
+  - "about"
+  - "server"
+  - "cms"
+cover: "/assets/images/uploads/2018/11/server.jpg"
+author: "yadi"
 ---
 
 Sebelum lebih jauh mengenai pembahasan yang lebih dalam, saya akan menjelaskan informasi server/CMS dari blog yang saya gunakan.
