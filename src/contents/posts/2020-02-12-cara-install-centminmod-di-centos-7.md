@@ -3,7 +3,7 @@ title: "Cara Install Centminmod di CentOS 7"
 author: yadi
 categories: [server, linux]
 tags: [centos, centminmod, lemp, vps]
-image: "/assets/images/uploads/2020/02/cara-install-centminmod-di-centos-7-001.png"
+cover: "/assets/images/uploads/2020/02/cara-install-centminmod-di-centos-7-001.png"
 date: "2020-02-12T15:31:00+07:00"
 featured: false
 hidden: false
@@ -16,12 +16,12 @@ Pada tutorial ini saya akan menjelaskan "Cara Install Centminmod di CentOS 7", b
 ## Apa saja fitur/aplikasi yang di tawarkan `Centminmod` ?
 
 - Nginx
-    - vHost
-    - vHost Static
-    - PageSpeed
-    - Lua
-    - SPDY & HTTP/2 SSL +LibreSSL
-    - OpenResty Module
+  - vHost
+  - vHost Static
+  - PageSpeed
+  - Lua
+  - SPDY & HTTP/2 SSL +LibreSSL
+  - OpenResty Module
 - PHP (PHP-FPM)
 - MariaDB (MySQL)
 - Memcached Server
@@ -32,10 +32,12 @@ Pada tutorial ini saya akan menjelaskan "Cara Install Centminmod di CentOS 7", b
 ## System Requirement
 
 ### Minimum
+
 - RAM: 256MB (CentOS 6) or 1GB (CentOS 7)
 - Disk: 20GB (OpenVZ) or 30GB (KVM)
 
 ### Recomended
+
 - RAM: 512MB (CentOS 6) or 2GB (CentOS 7)
 - Disk: 40GB (OpenVZ) or 60GB (KVM)
 
@@ -50,6 +52,7 @@ yum -y update; curl -O https://centminmod.com/installer.sh && chmod 0700 install
 ```
 
 ### Catatan
+
 - Setelah installasi selesai, Untuk menampilkan menu `Centminmod`, jalankan command `centmin` (contoh gambar menu pada header post ini)
 - `Centminmod` akan menginstall dari sources, yang artinya akan di compile pemograman yang dibutuhkan, ini mungkin membutuhkan waktu, tetapi ini juga bertujuan untuk optimasi software yang digunakan, sehingga akan dicocokan sources vps dengan konfigurasi yang optimal
 
@@ -61,14 +64,15 @@ yum -y update; curl -O https://centminmod.com/installer.sh && chmod 0700 install
 
 Untuk informasi installer bisa cek di [Halaman Berikut](https://centminmod.com/install.html)
 
-
 ## Website Resmi, Support atau Bantuan ?
 
 ### Website Utama
+
 - Website: [https://centminmod.com/](https://centminmod.com/)
 - Forum: [https://community.centminmod.com/](https://community.centminmod.com/)
 
 ### Sosial Media
+
 - Facebook: [https://www.facebook.com/centminmodcom](https://www.facebook.com/centminmodcom)
 - Twitter: [https://twitter.com/centminmod](https://twitter.com/centminmod)
 - Youtube: [https://www.youtube.com/c/CentminModGeorgeLiu/videos](https://www.youtube.com/c/CentminModGeorgeLiu/videos)

@@ -3,7 +3,7 @@ title: "Memperbaiki Error Let's Encrypt Expired 30 September 2021 (DST Root CA X
 author: yadi
 categories: [security, web-development]
 tags: [ssl, certificates, linux]
-image: "/assets/images/uploads/2021/10/letsencrypt.jpg"
+cover: "/assets/images/uploads/2021/10/letsencrypt.jpg"
 date: "2021-10-07T15:30:00+07:00"
 featured: false
 hidden: false
@@ -17,7 +17,6 @@ Jika anda belum mengenal apa itu Let's Encrypt maka saya akan membahas dikit dis
 Pada awalnya ketika ingin menggunakan SSL, harus berlangganan minimal 1 tahun, tetapi muncul sebuah produk pada 2014, dimana anda bisa mendapatkan SSL secara gratis tanpa biaya sedikitpun, tanpa harus isi form dsb, itulah Let's Encrypt.
 
 Let's Encrypt memberikan kemudahan bagi pemilik website memiliki https pada website dengan mudah, meskipun terdapat kekurangan, seperti SSL yang diberikan hanya aktif 90 hari dan harus di perpanjang. (Bisa dilakukan secara automatis dengan certbot)
-
 
 ## Permasalahan Utama
 
@@ -69,6 +68,7 @@ update-ca-certificates
 Sekarang anda sudah bisa melakukan root certificate secara manual, dan anda sudah bisa mengakses website-website dengan SSL dari Let's Encrypt.
 
 ## Referensi
+
 - https://en.wikipedia.org/wiki/Let%27s_Encrypt
 - https://letsencrypt.org/certificates/
 - https://community.letsencrypt.org/t/production-chain-changes/150739

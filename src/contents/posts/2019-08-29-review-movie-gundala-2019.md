@@ -3,7 +3,7 @@ title: "Review Movie: Gundala (2019)"
 author: yadi
 categories: [entertainment]
 tags: [indonesian-cinema, superhero]
-image: "/assets/images/uploads/2019/09/gundala.jpg"
+cover: "/assets/images/uploads/2019/09/gundala.jpg"
 date: "2019-08-29T20:46:14+07:00"
 featured: false
 hidden: false
@@ -15,18 +15,20 @@ Tentu tau dong film gundala? belum tau? oke jadi film ini merupakan film action 
 
 ### Detail
 
-* IMDB: [https://www.imdb.com/title/tt8237172/](https://www.imdb.com/title/tt8237172/)
-* Rilis: 29 Agustus 2019
-* Durasi: 2 Jam 3 Menit
-* Rating: 13+
-* Director: Joko Anwar
-* Writers: Joko Anwar, Harya Suraminata (berasal dari komik)
-* Stars: Abimana Aryasatya, Tara Basro, Bront Palarae
+- IMDB: [https://www.imdb.com/title/tt8237172/](https://www.imdb.com/title/tt8237172/)
+- Rilis: 29 Agustus 2019
+- Durasi: 2 Jam 3 Menit
+- Rating: 13+
+- Director: Joko Anwar
+- Writers: Joko Anwar, Harya Suraminata (berasal dari komik)
+- Stars: Abimana Aryasatya, Tara Basro, Bront Palarae
 
 ### Sinopsis
+
 Sancaka hidup di jalanan sejak ditinggal ayah dan ibunya. Menghadapi hidup yang keras, Sancaka belajar untuk bertahan hidup dengan tidak peduli dengan orang lain dan hanya mencoba untuk mendapatkan tempat yang aman bagi dirinya sendiri. Ketika situasi kota semakin tidak aman dan ketidakadilan merajalela di seluruh negeri, Sancaka harus buat keputusan yang berat, tetap hidup di zona amannya, atau keluar sebagai Gundala untuk membela orang-orang yang ditindas.
 
 ### Review Pribadi
+
 <span class="spoiler">29 agustus nonton di bioskop, awalnya penasaran karena memang sepertinya bagus. eh benaran tebakan ini, ternyata filmnya beneran bagus, yang nonton antri.</span>
 
 <span class="spoiler">ceritanya juga ga terlalu cepat atau lambat, dan juga yang saya rasakan ketika nonton, wah petirnya kuat banget kedengeran di bioskop. wkwkwk</span>
@@ -41,4 +43,5 @@ Sancaka hidup di jalanan sejak ditinggal ayah dan ibunya. Menghadapi hidup yang 
 </span>
 
 #### Update Per 19 September 2019
+
 Jumlah penonton gundala mencapai 1.3jt .. selamaatt...
