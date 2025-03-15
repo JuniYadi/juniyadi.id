@@ -11,7 +11,6 @@ tags:
   - konfigurasi
   - cms
   - wordpress
-  - hosting
 cover: "/assets/images/uploads/2018/11/server.jpg"
 author: "yadi"
 ---
