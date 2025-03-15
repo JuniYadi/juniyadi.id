@@ -3,17 +3,19 @@ import Image from "next/image";
 import { getAllPosts } from "@/lib/posts";
 import { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Blog Posts",
   description: "Read all my blog posts about development, tech, and more.",
 };
 
-// This ensures the page is statically generated at build time
-export const dynamic = "force-static";
-export const revalidate = 3600; // Revalidate every hour
-
 export default async function BlogPage() {
-  const _posts = getAllPosts();
+  const posts = getAllPosts();
+  console.log(
+    "posts",
+    posts.map((post) => post.fields.slug)
+  );
 
   return (
     <div className="container mx-auto py-10 px-4">
@@ -21,7 +23,7 @@ export default async function BlogPage() {
         Blog Posts
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {_posts.map((post) => (
+        {posts.map((post) => (
           <Link
             key={post.fields.slug}
             href={`/blog/${post.fields.slug}`}
@@ -42,7 +44,7 @@ export default async function BlogPage() {
                 />
               </div>
             )}
-            <div className="p-4 flex flex-col flex-grow">
+            <div className="p-4 flex flex-col flex-grow" key={post.fields.slug}>
               <div className="min-h-[4.5rem] mb-2">
                 <h2 className="text-lg font-semibold line-clamp-3 overflow-ellipsis text-gray-900 dark:text-gray-100">
                   {post.fields.title}

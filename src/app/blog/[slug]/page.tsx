@@ -30,7 +30,7 @@ const options = {
       rehypeSlug,
       rehypeAutolinkHeadings,
       rehypeHighlight,
-      [rehypeCodeLine, { showLineNumbers: true }] as never,
+      [rehypeCodeLine, { showLineNumbers: false }] as never,
       rehypeToc,
     ],
   },
