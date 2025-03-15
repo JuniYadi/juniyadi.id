@@ -6,7 +6,7 @@ import FusionCollection from "fusionable/FusionCollection";
 
 // import "highlight.js/styles/github.css";
 import "highlight.js/styles/github-dark.css";
-// import "./styles.css";
+import "./styles.css";
 
 // plugins inject
 import remarkGfm from "remark-gfm";
