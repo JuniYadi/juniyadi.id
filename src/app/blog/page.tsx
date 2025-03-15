@@ -3,7 +3,10 @@ import Image from "next/image";
 import { getAllPosts } from "@/lib/posts";
 import { Metadata } from "next";
 
-export const dynamic = "force-dynamic";
+// revalidate every 1 hour
+export const revalidate = 3600;
+// force static generation
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "Blog Posts",
@@ -12,10 +15,6 @@ export const metadata: Metadata = {
 
 export default async function BlogPage() {
   const posts = getAllPosts();
-  console.log(
-    "posts",
-    posts.map((post) => post.fields.slug)
-  );
 
   return (
     <div className="container mx-auto py-10 px-4">
@@ -30,7 +29,7 @@ export default async function BlogPage() {
             className="block border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 transition-colors overflow-hidden flex flex-col h-full bg-white dark:bg-gray-800"
           >
             {post.fields.cover && (
-              <div className="relative h-48 w-full">
+              <div className="relative h-40 w-full">
                 <Image
                   src={post.fields.cover}
                   alt={post.fields.title}
