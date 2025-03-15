@@ -1,7 +1,5 @@
 import React from "react";
 import Comments from "@/components/Comments";
-import { getTocBySlug } from "@/lib/toc";
-
 interface BlogPostLayoutProps {
   children: React.ReactNode;
   params: {
@@ -9,13 +7,7 @@ interface BlogPostLayoutProps {
   };
 }
 
-export default function BlogPostLayout({
-  children,
-  params,
-}: BlogPostLayoutProps) {
-  const content = getTocBySlug(params.slug);
-  console.log("content", content);
-
+export default function BlogPostLayout({ children }: BlogPostLayoutProps) {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
