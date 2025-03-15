@@ -5,7 +5,11 @@ export const getContent = () => {
   return collection;
 };
 
-export const getAllPosts = () => {
+export const getAllPosts = (limit?: number) => {
+  if (limit) {
+    return getContent().orderBy("date", "desc").limit(limit).getItemsArray();
+  }
+
   return getContent().orderBy("date", "desc").getItemsArray();
 };
 
