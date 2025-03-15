@@ -1,10 +1,12 @@
 ---
 title: "IP Address CIDR Network"
 slug: ip-address-cidr-network
-description: "Penjelasan tentang CIDR notation dan tabel IP Address untuk konfigurasi jaringan"
+description: "Panduan lengkap mengenai IP Address dengan CIDR Network, mencakup penjelasan, tabel IP space, dan aturan IP lokal."
 date: "2021-11-27T10:11:00+07:00"
 highlight: false
 draft: false
+categories:
+  - networking
 tags:
   - linux
   - network
