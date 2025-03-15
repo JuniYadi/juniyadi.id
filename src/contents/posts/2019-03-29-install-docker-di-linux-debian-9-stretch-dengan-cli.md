@@ -7,10 +7,10 @@ highlight: false
 draft: false
 category: docker
 tags:
-  - docker
-  - debian
-  - cli
-  - tutorial
+  - Docker
+  - Debian
+  - CLI
+  - Tutorial
 cover: /assets/images/uploads/2019/03/docker-debian.png
 author: yadi
 ---
