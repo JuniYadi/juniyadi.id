@@ -5,3 +5,4 @@ src/contents/posts/2018-11-30-tutorial-membuat-bot-telegram-membuat-bot-bagian-1
 src/contents/posts/2018-12-01-pengenalan-dasar-php-untuk-pemula.md
 src/contents/posts/2018-12-01-rekomendasi-software-editor-atau-addons-browser-untuk-programer-front-back-end.md
 src/contents/posts/2018-12-03-tips-dan-trik-merubah-tampilan-terminal-linux.md
+src/contents/posts/2019-03-08-laravel-relationship-memanggil-data-dari-database-lain-berdasarkan-localkey.md
