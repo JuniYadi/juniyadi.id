@@ -5,16 +5,13 @@ description: "Panduan lengkap mengganti repository Debian ke mirror server lokal
 date: "2019-04-01T09:19:53+07:00"
 highlight: false
 draft: false
-categories:
-  - Debian
-  - Repository
-  - Tutorial
+category: Debian
 tags:
   - debian
-  - debian-6
-  - debian-7
-  - debian-8
-  - debian-9
+  - repository
+  - mirror
+  - tutorial
+  - apt-update
 cover: /assets/images/uploads/2019/04/Selection_01006.png
 author: yadi
 ---
