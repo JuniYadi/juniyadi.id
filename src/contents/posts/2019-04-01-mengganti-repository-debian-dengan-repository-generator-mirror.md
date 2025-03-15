@@ -7,11 +7,10 @@ highlight: false
 draft: false
 category: Debian
 tags:
-  - debian
-  - repository
-  - mirror
-  - tutorial
-  - apt-update
+  - Debian
+  - Repository
+  - Mirror
+  - Tutorial
 cover: /assets/images/uploads/2019/04/Selection_01006.png
 author: yadi
 ---
