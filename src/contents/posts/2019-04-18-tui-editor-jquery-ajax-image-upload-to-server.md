@@ -8,10 +8,10 @@ draft: false
 categories:
   - Tutorial
 tags:
+  - tui-editor
   - jquery
   - ajax
-  - markdown
-  - tui-editor
+  - image-upload
 cover: /assets/images/uploads/2019/04/ajax-jquery.jpg
 author: yadi
 ---
