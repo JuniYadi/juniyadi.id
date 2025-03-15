@@ -33,18 +33,17 @@ Sancaka hidup di jalanan sejak ditinggal ayah dan ibunya. Menghadapi hidup yang 
 
 ### Review Pribadi
 
-<span class="spoiler">29 agustus nonton di bioskop, awalnya penasaran karena memang sepertinya bagus. eh benaran tebakan ini, ternyata filmnya beneran bagus, yang nonton antri.</span>
+29 agustus nonton di bioskop, awalnya penasaran karena memang sepertinya bagus. eh benaran tebakan ini, ternyata filmnya beneran bagus, yang nonton antri.
 
-<span class="spoiler">ceritanya juga ga terlalu cepat atau lambat, dan juga yang saya rasakan ketika nonton, wah petirnya kuat banget kedengeran di bioskop. wkwkwk</span>
+ceritanya juga ga terlalu cepat atau lambat, dan juga yang saya rasakan ketika nonton, wah petirnya kuat banget kedengeran di bioskop. wkwkwk
 
-<span class="spoiler">tapi overall semuanya bagus, ga kalah seru dengan film superhero sekelas Marvel, walaupun kita tidak bisa bandingkan apple to apple, tetapi dari segi kualitasi film sudah mantap.</span>
+tapi overall semuanya bagus, ga kalah seru dengan film superhero sekelas Marvel, walaupun kita tidak bisa bandingkan apple to apple, tetapi dari segi kualitasi film sudah mantap.
 
-<span class="spoiler">terutama kita tau sendiri untuk pembuatan animasi ini mahal sekali, tetapi menurut `joko anwar` sendiri film ini tidak terlalu banyak animasinya. wah wah ... </span>
+terutama kita tau sendiri untuk pembuatan animasi ini mahal sekali, tetapi menurut `joko anwar` sendiri film ini tidak terlalu banyak animasinya. wah wah ...
 
-<span class="spoiler">dari cerita juga terlihat bahwa penjabaran asal usul dan pembangunan karakter gundala sendiri tidak tiba-tiba muncul, pertama kali cerita berasal dari kisah kecilnya, hingga dia bisa dapat kekuatannya dijelaskan dan dikemas dengan cara apik sehingga para penonton tidak terlalu bingung.</span>
+dari cerita juga terlihat bahwa penjabaran asal usul dan pembangunan karakter gundala sendiri tidak tiba-tiba muncul, pertama kali cerita berasal dari kisah kecilnya, hingga dia bisa dapat kekuatannya dijelaskan dan dikemas dengan cara apik sehingga para penonton tidak terlalu bingung.
 
-<span class="spoiler">akhir kata, mantap sekali, kami menunggu film-film sekelas gundala atau lebih baik untuk indonesia.
-</span>
+akhir kata, mantap sekali, kami menunggu film-film sekelas gundala atau lebih baik untuk indonesia.
 
 #### Update Per 19 September 2019
 
