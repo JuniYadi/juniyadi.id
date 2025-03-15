@@ -1,10 +1,12 @@
 ---
 title: "Tutorial Membuat Bot Telegram Dari Dasar Untuk Pemula"
 slug: tutorial-membuat-bot-telegram-dari-dasar-untuk-pemula
-description: "Panduan dasar membuat bot Telegram mulai dari pembuatan bot hingga implementasi dasar"
+description: "Artikel ini menjelaskan langkah-langkah membuat bot Telegram dari dasar dengan panduan mudah diikuti, lengkap dengan screenshoot step-by-step untuk pemula."
 date: "2018-11-30T08:10:27+07:00"
 highlight: false 
 draft: false
+categories:
+  - Tutorial
 tags:
   - bot
   - php
