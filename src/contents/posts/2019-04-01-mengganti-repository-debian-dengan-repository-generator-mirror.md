@@ -1,10 +1,14 @@
 ---
 title: "Mengganti Repository Debian dengan Repository Generator (Mirror)"
 slug: mengganti-repository-debian-dengan-repository-generator-mirror
-description: "Tutorial mengubah repository Debian menggunakan mirror server terdekat untuk akses yang lebih cepat"
+description: "Panduan lengkap mengganti repository Debian ke mirror server lokal guna mempercepat update. Tutorial untuk Debian 10, 9, 8, dan 7."
 date: "2019-04-01T09:19:53+07:00"
 highlight: false
 draft: false
+categories:
+  - Debian
+  - Repository
+  - Tutorial
 tags:
   - debian
   - debian-6
