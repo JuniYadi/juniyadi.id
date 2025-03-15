@@ -1,3 +1,4 @@
 src/contents/posts/2018-11-30-informasi-server-cms-blog-juni-yadi.md
 src/contents/posts/2018-11-30-selamat-datang-di-blog-juni-yadi.md
 src/contents/posts/2018-12-01-rekomendasi-software-editor-atau-addons-browser-untuk-programer-front-back-end.md
+src/contents/posts/2018-12-04-tutorial-dasar-menggunakan-framework-laravel.md
