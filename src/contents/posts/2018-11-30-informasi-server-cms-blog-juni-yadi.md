@@ -7,10 +7,10 @@ highlight: false
 draft: false
 category: server
 tags:
-  - server: "Discusses server specifications and setup."
-  - konfigurasi: "Covers website configuration details."
-  - cms: "Explains the CMS used for the blog."
-  - wordpress: "Focuses on WordPress as the chosen CMS."
+  - server
+  - konfigurasi
+  - cms
+  - wordpress
 cover: "/assets/images/uploads/2018/11/server.jpg"
 author: "yadi"
 ---
