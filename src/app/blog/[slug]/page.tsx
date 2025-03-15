@@ -2,6 +2,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 import matter from "gray-matter";
 import { Metadata } from "next";
+import Image from "next/image";
 
 import "highlight.js/styles/github-dark.css";
 import "./styles.css";
@@ -102,10 +103,40 @@ export default function Page({ params }: { params: { slug: string } }) {
     return (
       <div className="container mx-auto py-10 px-4">
         <article className="prose prose-lg lg:prose-xl dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 mx-auto max-w-4xl w-full">
+          <Image
+            src={itemContent.fields.cover}
+            alt={itemContent.fields.title}
+            width={1600}
+            height={800}
+            className="mb-8 w-full"
+          />
           <h1>{itemContent.fields.title}</h1>
-          <div className="text-sm text-gray-500 mb-8">
+          <div className="text-sm text-gray-500 mb-2">
+            Posted by {itemContent.fields.author} at{" "}
             {itemContent.fields.date &&
               new Date(itemContent.fields.date).toLocaleString()}
+          </div>
+          <div className="text-sm text-gray-500 mb-2">
+            Categories:{" "}
+            <a
+              key={itemContent.fields.category}
+              href={`/categories/${itemContent.fields.category}`}
+              className="inline-block bg-blue-500 hover:bg-blue-700 text-white text-xs px-2 py-1 rounded-full mr-2"
+            >
+              {itemContent.fields.category}
+            </a>
+          </div>
+          <div className="text-sm text-gray-500 mb-2">
+            Tags:{" "}
+            {itemContent.fields.tags.map((tag: string) => (
+              <a
+                key={tag}
+                href={`/tags/${tag}`}
+                className="inline-block bg-gray-500 hover:bg-gray-700 text-white text-xs px-2 py-1 rounded-full mr-2"
+              >
+                #{tag}
+              </a>
+            ))}
           </div>
           <MDXRemote source={content} options={options} />
         </article>
