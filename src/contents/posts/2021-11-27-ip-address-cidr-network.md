@@ -5,12 +5,11 @@ description: "Panduan lengkap mengenai IP Address dengan CIDR Network, mencakup 
 date: "2021-11-27T10:11:00+07:00"
 highlight: false
 draft: false
-categories:
-  - networking
+category: networking
 tags:
-  - linux
-  - network
   - ip
+  - cidr
+  - networking
 cover: /assets/images/uploads/2021/11/network.jpg
 author: yadi
 ---
