@@ -7,10 +7,10 @@ highlight: false
 draft: false
 category: Software Tools
 tags:
-  - software
-  - editor
-  - browser-addons
-  - programming-tools
+  - "Software Editors"
+  - "Browser Addons"
+  - "Programming Tools"
+  - "Coding"
 cover: /assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer.jpg
 author: yadi
 ---
