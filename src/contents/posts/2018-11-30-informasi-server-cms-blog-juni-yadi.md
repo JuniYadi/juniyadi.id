@@ -1,17 +1,17 @@
 ---
 title: "Informasi Server CMS Blog Juni Yadi"
 slug: informasi-server-cms-blog-juni-yadi
-description: "Informasi mengenai spesifikasi server dan konfigurasi website yang digunakan untuk blog Juni Yadi"
+description: "Artikel ini menyajikan informasi lengkap mengenai spesifikasi server, konfigurasi website, dan setup CMS yang digunakan untuk mengelola blog Juni Yadi secara optimal."
 date: "2018-11-30T07:50:28+07:00"
 highlight: false
 draft: false
-categories:
-  - "server"
-  - "cms"
+category: server
 tags:
-  - "about"
-  - "server"
-  - "cms"
+  - server
+  - konfigurasi
+  - cms
+  - wordpress
+  - hosting
 cover: "/assets/images/uploads/2018/11/server.jpg"
 author: "yadi"
 ---
