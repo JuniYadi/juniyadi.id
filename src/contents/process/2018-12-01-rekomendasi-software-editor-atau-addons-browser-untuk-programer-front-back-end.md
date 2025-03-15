@@ -1,11 +1,16 @@
 ---
-layout: post
 title: "Rekomendasi Software Editor atau Addons Browser Untuk Programer (Front atau Back End)"
+slug: rekomendasi-software-editor-atau-addons-browser-untuk-programer-front-back-end
+description: "Daftar rekomendasi tools dan addons browser untuk membantu pekerjaan development"
+date: "2018-12-01T19:46:00+07:00"
+highlight: false
+draft: false
+tags:
+  - software
+  - dasar
+  - addons browser
+cover: /assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer.jpg
 author: yadi
-categories: [ programing ]
-tags: [ software, dasar, addons browser ]
-image: assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer.jpg
-date: 2018-12-01 19:46:00 +07:00
 ---
 
 Ketika kita baru memulai atau belajar pemograman atau debug website yang kita buat, tentu saja kita jadi bingung harus menggunakan software apa saja ?? kemudian gimana cara debug nya ??

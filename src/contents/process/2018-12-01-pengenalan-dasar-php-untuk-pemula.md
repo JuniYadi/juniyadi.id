@@ -1,11 +1,15 @@
 ---
-layout: post
-title: "Pengenalan Dasar Php Untuk Pemula"
+title: "Pengenalan Dasar PHP Untuk Pemula"
+slug: pengenalan-dasar-php-untuk-pemula
+description: "Pengenalan bahasa pemrograman PHP untuk pemula dengan contoh kode dasar"
+date: "2018-12-01T01:27:49+07:00"
+highlight: false
+draft: false
+tags:
+  - dasar
+  - php
+cover: /assets/images/uploads/2018/12/php-logo.png
 author: yadi
-categories: [ programing ]
-tags: [ dasar, php ]
-image: assets/images/uploads/2018/12/php-logo.png
-date: 2018-12-01 01:27:49 +07:00
 ---
 
 Pada post kali ini, saya akan membahas tentang pengenalan dasar PHP. PHP ini bukan singkatan dari ~~Pemberi Harapan Palsu~~ ya, Kepanjangan PHP yang sebenarnya yaitu Personal Home Page pada awalnya, akan tetapi lebih dikenal dengan sebutan Hypertext Preprocessor.

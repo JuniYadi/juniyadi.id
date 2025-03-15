@@ -1,11 +1,15 @@
 ---
-layout: post
-title:  "Tutorial Membuat Bot Telegram Membuat Bot [Bagian 1]"
+title: "Tutorial Membuat Bot Telegram Membuat Bot [Bagian 1]"
+slug: tutorial-membuat-bot-telegram-membuat-bot-bagian-1
+description: "Panduan langkah demi langkah membuat bot Telegram menggunakan BotFather"
+date: "2018-11-30T09:46:14+07:00"
+highlight: false
+draft: false
+tags:
+  - bot
+  - telegram
+cover: /assets/images/uploads/2018/11/Tutorial-Membuat-Bot-Telegram-Tombol-Start.png
 author: yadi
-categories: [ programing ]
-tags: [ bot, telegram ]
-image: assets/images/uploads/2018/11/Tutorial-Membuat-Bot-Telegram-Tombol-Start.png
-date: 2018-11-30 09:46:14 +07:00
 ---
 
 Sebelum kita memulai untuk membuat bot telegram, pastikan anda sudah mendaftar telegram melalui handphone anda. Pada tutorial kali ini, saya menggunakan telegram desktop, agar mempermudah dalam pembuatan tutorial.

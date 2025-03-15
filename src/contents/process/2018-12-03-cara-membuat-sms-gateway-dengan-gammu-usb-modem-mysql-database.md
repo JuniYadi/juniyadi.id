@@ -1,11 +1,17 @@
 ---
-layout: post
 title: "Cara Membuat SMS Gateway Dengan Gammu + USB Modem + MySQL Database"
+slug: cara-membuat-sms-gateway-dengan-gammu-usb-modem-mysql-database
+description: "Panduan lengkap membuat SMS Gateway menggunakan Gammu, USB Modem dan database MySQL"
+date: "2018-12-03T05:25:26+07:00"
+highlight: false
+draft: false
+tags:
+  - gammu
+  - mysql
+  - sms gateway
+  - usb modem
+cover: /assets/images/uploads/2018/12/sms-gateway.jpg
 author: yadi
-categories: [ project ]
-tags: [ gammu, mysql, sms gateway, usb modem ]
-image: assets/images/uploads/2018/12/sms-gateway.jpg
-date: 2018-12-03 05:25:26 +07:00
 ---
 
 Hai Sobat Yadi, kali ini saya akan membahas tentang SMS Gateway, project ini dilakukan karena saya ada modem usb nganggur satu tidak terpakai, untuk seri modemnya yaitu Vodafone Huawei K4510. Setelah iseng-iseng dengan sms gateway menggunakan HP Android, saya kefikiran apa bisa menggunakan usb modem? Alhasil bisa ternyata, semua ini menggunakan service gammu namanya.
