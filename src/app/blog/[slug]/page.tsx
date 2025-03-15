@@ -31,6 +31,9 @@ export async function generateMetadata({
 
     const itemContent = fileContent.getItem();
 
+    // Validate tags
+    validateTags(itemContent.fields);
+
     return {
       title: itemContent.fields.title,
       description: itemContent.fields.description || itemContent.fields.title,
@@ -40,6 +43,7 @@ export async function generateMetadata({
         type: "article",
         publishedTime: itemContent.fields.date,
         authors: ["Juni Yadi"],
+        tags: itemContent.fields.tags, // Include tags in metadata
       },
     };
   } catch (e) {
