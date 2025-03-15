@@ -1,10 +1,12 @@
 ---
 title: "tui Editor: jQuery Ajax Image Upload to Server"
 slug: tui-editor-jquery-ajax-image-upload-to-server
-description: "Panduan implementasi upload gambar menggunakan jQuery Ajax pada tui Editor dengan integrasi server-side PHP"
+description: "Learn how to implement Ajax image uploads in tui Editor with PHP backend integration, including handling CSRF tokens and multiple images."
 date: "2019-04-18T06:57:18+07:00"
 highlight: false
-draft: false 
+draft: false
+categories:
+  - Tutorial
 tags:
   - jquery
   - ajax
