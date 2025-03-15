@@ -1,10 +1,14 @@
 ---
-title: "Informasi Server Cms Blog Juni Yadi"
+title: "Informasi Server CMS Blog Juni Yadi"
 slug: informasi-server-cms-blog-juni-yadi
-description: This is the eighth post about GraphQL
+description: "Informasi mengenai spesifikasi server dan konfigurasi website yang digunakan untuk blog Juni Yadi"
 date: "2018-11-30T07:50:28+07:00"
 highlight: false
-tags: [about]
+draft: false
+tags:
+  - about
+  - server
+  - cms
 cover: /assets/images/uploads/2018/11/server.jpg
 author: yadi
 ---
