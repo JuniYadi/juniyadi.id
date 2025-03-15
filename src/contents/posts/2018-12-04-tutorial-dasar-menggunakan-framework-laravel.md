@@ -8,6 +8,7 @@ draft: false
 tags:
   - laravel
   - php
+  - web development
   - beginner
 cover: /assets/images/uploads/2018/12/Tutorial-Dasar-Menggunakan-Framework-Laravel.png
 author: yadi
