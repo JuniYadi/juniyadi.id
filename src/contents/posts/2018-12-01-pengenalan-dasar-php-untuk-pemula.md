@@ -1,10 +1,13 @@
 ---
 title: "Pengenalan Dasar PHP Untuk Pemula"
 slug: pengenalan-dasar-php-untuk-pemula
-description: "Pengenalan bahasa pemrograman PHP untuk pemula dengan contoh kode dasar"
+description: "Materi ini menjelaskan dasar-dasar PHP untuk pemula melalui contoh kode sederhana yang menggambarkan penggunaan tag, variabel, dan perintah dasar dalam pemrograman PHP."
 date: "2018-12-01T01:27:49+07:00"
 highlight: false
 draft: false
+categories:
+  - PHP
+  - Tutorial
 tags:
   - dasar
   - php
