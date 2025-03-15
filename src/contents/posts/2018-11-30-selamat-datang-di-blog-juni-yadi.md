@@ -1,12 +1,12 @@
 ---
 title: "Selamat Datang di Blog Juni Yadi"
 slug: selamat-datang-di-blog-juni-yadi
-description: "Perkenalan tentang blog Juni Yadi dan informasi kontak"
+description: "Selamat datang di blog Juni Yadi yang menyajikan pengetahuan di bidang System Administration, Front-End dan Back-End Development, serta informasi kontak lengkap."
 date: "2018-11-30T07:36:24+07:00"
 highlight: false
 draft: false
-categories: ["general"]
-tags: ["about"]
+category: "general"
+tags: ["about", "introduction"]
 cover: "/assets/images/uploads/2018/11/coding-writing.jpg"
 author: "yadi"
 ---
