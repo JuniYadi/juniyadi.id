@@ -6,15 +6,7 @@ date: "2025-03-16T02:01:40Z"
 highlight: false
 draft: false
 category: "Cloudflare"
-tags:
-  [
-    "Cloudflare",
-    "API Token",
-    "Wrangler",
-    "Cloudflare Workers",
-    "Environment Variables",
-    "Troubleshooting",
-  ]
+tags: ["Cloudflare", "API Token", "Wrangler CLI", "Cloudflare Workers"]
 cover: "/assets/images/uploads/2025/03/cloudflare-worker-generate-token.png"
 author: "yadi"
 ---
