@@ -5,9 +5,9 @@ description: "Tutorial dasar PHP yang membahas tag, variabel, dan perintah dasar
 category: PHP
 tags:
   - PHP
-  - tutorial
-  - basics
-  - programming
+  - Programming
+  - Tutorial
+  - Beginner
 cover: /assets/images/uploads/2018/12/php-logo.png
 author: yadi
 ---
