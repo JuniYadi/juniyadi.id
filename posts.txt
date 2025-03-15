@@ -1,2 +1,3 @@
 
 src/contents/posts/2018-11-30-selamat-datang-di-blog-juni-yadi.md
+src/contents/posts/2018-11-30-tutorial-membuat-bot-telegram-dari-dasar-untuk-pemula.md

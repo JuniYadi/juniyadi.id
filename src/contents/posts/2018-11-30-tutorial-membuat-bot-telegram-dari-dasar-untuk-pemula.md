@@ -5,8 +5,7 @@ description: "Artikel ini menjelaskan langkah-langkah membuat bot Telegram dari 
 date: "2018-11-30T08:10:27+07:00"
 highlight: false 
 draft: false
-categories:
-  - Tutorial
+category: Tutorial
 tags:
   - bot
   - php
