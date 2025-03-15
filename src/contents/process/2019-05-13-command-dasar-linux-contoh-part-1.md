@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "Command Dasar Linux + Contoh [PART-1]"
 author: yadi
-categories: [ linux ]
-tags: [ begginer ]
-image: assets/images/uploads/2019/05/Selection_01146.png
-date: 2019-05-13 04:46:47 +07:00
+categories: [linux]
+tags: [bash, terminal]
+image: "/assets/images/uploads/2019/05/Selection_01146.png"
+date: "2019-05-13T04:46:47+07:00"
+featured: false
+hidden: false
 ---
 
 Command linux bisa diartikan sebagai perintah linux atau perintah dasar linux, berbeda sekali dengan windows dimana kita akan dimanjakan dengan klik sana sini, sedangkan dilinux terutama server, ini hanya berbasis command seperti ini dimana digunakan sebagai membuka/mengedit/membuat file dan lain sebagainya.

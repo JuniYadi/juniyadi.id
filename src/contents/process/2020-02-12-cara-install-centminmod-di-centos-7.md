@@ -1,11 +1,10 @@
 ---
-layout: post
 title: "Cara Install Centminmod di CentOS 7"
 author: yadi
-categories: [ linux ]
-tags: [ centminmod ]
-image: assets/images/uploads/2020/02/cara-install-centminmod-di-centos-7-001.png
-date: 2020-02-12 15:31:00 +07:00
+categories: [server, linux]
+tags: [centos, centminmod, lemp, vps]
+image: "/assets/images/uploads/2020/02/cara-install-centminmod-di-centos-7-001.png"
+date: "2020-02-12T15:31:00+07:00"
 featured: false
 hidden: false
 ---

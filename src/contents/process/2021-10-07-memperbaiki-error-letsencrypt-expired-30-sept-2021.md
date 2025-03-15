@@ -1,11 +1,10 @@
 ---
-layout: post
-title: "Memberbaiki Error Let's Encrypt Expired 30 September 2021 (DST Root CA X3)"
+title: "Memperbaiki Error Let's Encrypt Expired 30 September 2021 (DST Root CA X3)"
 author: yadi
-categories: [ linux, windows ]
-tags: [ ssl ]
-image: assets/images/uploads/2021/10/letsencrypt.jpg
-date: 2021-10-07 15:30:00 +07:00
+categories: [security, web-development]
+tags: [ssl, certificates, linux]
+image: "/assets/images/uploads/2021/10/letsencrypt.jpg"
+date: "2021-10-07T15:30:00+07:00"
 featured: false
 hidden: false
 ---

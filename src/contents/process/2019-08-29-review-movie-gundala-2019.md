@@ -1,15 +1,12 @@
 ---
-layout: post
-title:  "Review Movie: Gundala (2019)"
+title: "Review Movie: Gundala (2019)"
 author: yadi
-categories: [ review movie ]
-tags: [ indonesia ]
-image: assets/images/uploads/2019/09/gundala.jpg
-date: 2019-08-29 20:46:14 +07:00
-description: "Review pribadi saya tentang film gundala (2019)."
+categories: [entertainment]
+tags: [indonesian-cinema, superhero]
+image: "/assets/images/uploads/2019/09/gundala.jpg"
+date: "2019-08-29T20:46:14+07:00"
 featured: false
 hidden: false
-rating: 5
 ---
 
 Tentu tau dong film gundala? belum tau? oke jadi film ini merupakan film action superhero asli dari indonesia. Untuk pertama kalinya, film superhero dikemas dengan apik dan menarik, membuat standar baru dalam film superhero di indonesia.

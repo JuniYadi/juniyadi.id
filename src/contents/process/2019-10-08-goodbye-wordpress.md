@@ -1,10 +1,10 @@
 ---
-layout: post
 title: "Goodbye WordPress"
 author: yadi
-tags: [ about ]
-image: assets/images/uploads/2019/10/close-up-code-coding.jpg
-date: 2019-10-08 10:12:00 +07:00
+categories: [meta]
+tags: [blogging, jekyll, github-pages]
+image: "/assets/images/uploads/2019/10/close-up-code-coding.jpg"
+date: "2019-10-08T10:12:00+07:00"
 featured: false
 hidden: false
 ---
