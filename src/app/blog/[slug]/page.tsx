@@ -8,6 +8,10 @@ import { s } from "@/lib/slug";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { formatDateTime } from "@/lib/date";
 import { MarkdownOptions } from "@/lib/markdown";
+import Pre from "@/components/Pre";
+import { getTocBySlug } from "@/lib/toc";
+import TableOfContent from "@/components/TableOfContent";
+import { TOCItem } from "@/types/toc";
 
 // Force static generation
 export const dynamic = "force-static";
@@ -66,6 +70,10 @@ export default function Page({ params }: { params: { slug: string } }) {
     notFound();
   }
 
+  // generate toc data
+  const getToc = getTocBySlug(slug);
+  const tocsData = getToc?.data?.headings as TOCItem[];
+
   try {
     const fileContent = getPostBySlug(slug);
 
@@ -80,15 +88,15 @@ export default function Page({ params }: { params: { slug: string } }) {
 
     return (
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 gap-8">
-          {/* Main content - blog post - now full width */}
-          <main className="prose prose-lg dark:prose-invert max-w-none">
-            <article className="prose prose-lg lg:prose-xl dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 mx-auto max-w-4xl w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Main content - blog post - now takes 3/4 of the width on large screens */}
+          <main className="prose dark:prose-invert max-w-none lg:col-span-3">
+            <article className="prose prose-base dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 max-w-none mx-auto w-full">
               <Image
                 src={itemContent.fields.cover}
                 alt={itemContent.fields.title}
-                width={640} // further reduced width
-                height={360} // further reduced height
+                width={640}
+                height={360}
                 className="mb-8 w-full"
               />
               <h1>{itemContent.fields.title}</h1>
@@ -119,12 +127,27 @@ export default function Page({ params }: { params: { slug: string } }) {
                   </a>
                 ))}
               </div>
-              <MDXRemote source={content} options={MarkdownOptions} />
+              <MDXRemote
+                source={content}
+                options={MarkdownOptions}
+                components={{ pre: (props) => <Pre {...props} /> }}
+              />
             </article>
           </main>
 
-          {/* Comments section - below the content */}
-          <div className="mt-12 pt-8 border-t">
+          {/* Table of Contents Sidebar - takes 1/4 of the width on large screens */}
+          <aside className="lg:block">
+            <div className="sticky top-8">
+              {tocsData ? (
+                <TableOfContent items={{ tocs: tocsData }} />
+              ) : (
+                <p className="text-sm text-gray-500">No table of contents</p>
+              )}
+            </div>
+          </aside>
+
+          {/* Comments section - below the content, spans all columns */}
+          <div className="mt-12 pt-8 border-t lg:col-span-4">
             <Comments />
           </div>
         </div>
