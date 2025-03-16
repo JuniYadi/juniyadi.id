@@ -42,7 +42,10 @@ export function TableOfContent({ items }: TableOfContentProps) {
 
   // Add a new effect to scroll the active TOC item into view
   useEffect(() => {
-    if (activeId) {
+    // Only apply auto-scrolling on desktop/larger screens
+    const isMobile = window.innerWidth < 768; // Standard breakpoint for mobile
+    
+    if (activeId && !isMobile) {
       // Find the active TOC item link by its href
       const activeTocLink = document.querySelector(
         `.toc-nav a[href="#${activeId}"]`
