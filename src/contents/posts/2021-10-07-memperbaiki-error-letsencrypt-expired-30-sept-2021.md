@@ -13,8 +13,6 @@ featured: false
 hidden: false
 ---
 
-# Perbaiki format penulisan seluruh dokumen markdown AI!
-
 Halo sobat yadi, kali ini saya akan membahas permasalahan menarik mengenai Let's Encrypt yang expired pada 30 September 2021.
 
 ## Awal Mula
@@ -30,12 +28,12 @@ Ketika awal mula Let's Encrypt, mereka menggunakan **DST Root CA X3** sebagai Ro
 
 Sebelumnya mungkin tidak ada masalah, tetapi saat ini sudah terjadi, banyak dari pemilik website, pengguna laptop, handphone mulai kebingungan karena website mereka tidak bisa diakses dan menampilkan pesan error.
 
-> Your connection is not private
+> Your connection is not private  
 > NET::ERR_CERT_DATE_INVALID
 
 ## Root Certificate Baru
 
-![](/assets/images/uploads/2021/10/letsencrypt-isrg-hierarchy.png)
+![Let's Encrypt Hierarchy](/assets/images/uploads/2021/10/letsencrypt-isrg-hierarchy.png)
 
 Let's Encrypt saat ini sudah menggunakan Root Certificate baru bernama **ISRG Root X1**, akan tetapi, jika device anda tidak pernah melakukan update **Sistem Operasi** atau masih menggunakan OS Lama, maka permasalahan ini akan muncul saat ini ketika anda mengakses website dengan SSL dari Let's Encrypt.
 
@@ -75,6 +73,6 @@ Sekarang anda sudah bisa melakukan root certificate secara manual, dan anda suda
 
 ## Referensi
 
-- https://en.wikipedia.org/wiki/Let%27s_Encrypt
-- https://letsencrypt.org/certificates/
-- https://community.letsencrypt.org/t/production-chain-changes/150739
+- [Wikipedia: Let's Encrypt](https://en.wikipedia.org/wiki/Let%27s_Encrypt)
+- [Let's Encrypt Certificates](https://letsencrypt.org/certificates/)
+- [Production Chain Changes](https://community.letsencrypt.org/t/production-chain-changes/150739)
