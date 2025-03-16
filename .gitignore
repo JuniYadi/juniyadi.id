@@ -39,3 +39,4 @@ aider-fix.sh
 LLM.md
 generate.sh
 commit.sh
+.env
