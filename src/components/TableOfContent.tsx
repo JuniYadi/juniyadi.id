@@ -40,6 +40,24 @@ export function TableOfContent({ items }: TableOfContentProps) {
     };
   }, [pathname]);
 
+  // Add a new effect to scroll the active TOC item into view
+  useEffect(() => {
+    if (activeId) {
+      // Find the active TOC item link by its href
+      const activeTocLink = document.querySelector(
+        `.toc-nav a[href="#${activeId}"]`
+      );
+
+      if (activeTocLink) {
+        // Scroll the TOC item into view, within the constraints of its container
+        activeTocLink.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest", // Only scroll if needed to make the element visible
+        });
+      }
+    }
+  }, [activeId]);
+
   // Get the heading ID from the data object or fall back to generating a slug
   const getHeadingId = (item: TOCItem): string => {
     // First try to get the ID from the data object
@@ -77,8 +95,7 @@ export function TableOfContent({ items }: TableOfContentProps) {
   if (items.tocs.length === 0) return null;
 
   return (
-    <div className="prose prose-base dark:prose-invert mb-8 rounded-lg border border-gray-200 p-4 dark:border-gray-700 sticky top-32 max-h-[calc(100vh-160px)] overflow-y-auto z-10 bg-white dark:bg-gray-900 self-start [&_a]:no-underline">
-      <h2 className="mb-3 text-lg font-medium">Table of Contents</h2>
+    <div className="prose prose-base dark:prose-invert mb-8 rounded-lg border border-gray-200 p-4 dark:border-gray-700 sticky top-16 max-h-[calc(100vh-160px)] overflow-y-auto z-10 bg-white dark:bg-gray-900 self-start [&_a]:no-underline">
       <nav className="toc-nav">
         <ul className="space-y-1 text-sm">
           {items.tocs.map((item, index) => {
