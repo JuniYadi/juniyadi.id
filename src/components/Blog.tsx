@@ -3,10 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import { formatDateTime } from "@/lib/date";
+import { OperatorEnum } from "fusionable/FusionCollection";
 
 export default function Blog() {
   // Blog posts data with Picsum images
-  const posts = getAllPosts(6);
+  const posts = getAllPosts(6, {
+    key: "draft",
+    operator: OperatorEnum.EQUALS,
+    value: false,
+  });
 
   return (
     <section className="py-16 bg-white dark:bg-gray-900">
