@@ -134,7 +134,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 Categories:{" "}
                 <a
                   key={`category-${s(itemContent.fields.category)}`}
-                  href={`/categories/${s(itemContent.fields.category)}`}
+                  href={`/blog/categories/${s(itemContent.fields.category)}`}
                   className="inline-block bg-blue-500 dark:bg-blue-700 hover:bg-blue-700 dark:hover:bg-blue-900 text-white text-xs px-2 py-1 rounded-full mr-2"
                 >
                   {itemContent.fields.category}
@@ -145,7 +145,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 {itemContent.fields.tags.map((tag: string) => (
                   <a
                     key={`tag-${s(tag)}`}
-                    href={`/tags/${s(tag)}`}
+                    href={`/blog/tags/${s(tag)}`}
                     className="inline-block bg-gray-500 dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-900 text-white text-xs px-2 py-1 rounded-full mr-2"
                   >
                     #{s(tag)}
