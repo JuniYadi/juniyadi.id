@@ -19,6 +19,7 @@ author: yadi
 Halo sobat yadi, pada kesempatan ini saya akan share tentang **Cara Install SSL Gratis di Nginx Ubuntu 20.04**.
 
 ## Persyaratan
+
 1. OS Ubuntu 20.04
 2. Akses Root/ Non-Root
 3. Web Server Nginx
@@ -29,4 +30,4 @@ Halo sobat yadi, pada kesempatan ini saya akan share tentang **Cara Install SSL 
 curl https://get.acme.sh | sh -s email=youremail@example.com
 ```
 
-
+# Please Continue AI!
