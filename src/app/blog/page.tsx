@@ -4,6 +4,7 @@ import { getAllPosts } from "@/lib/posts";
 import { Metadata } from "next";
 import { formatDateTime } from "@/lib/date";
 import { s } from "@/lib/slug";
+import { OperatorEnum } from "fusionable/FusionCollection";
 
 // revalidate every 1 hour
 export const revalidate = 3600;
@@ -16,7 +17,11 @@ export const metadata: Metadata = {
 };
 
 export default async function BlogPage() {
-  const posts = getAllPosts();
+  const posts = getAllPosts(0, {
+    key: "draft",
+    operator: OperatorEnum.EQUALS,
+    value: false,
+  });
 
   return (
     <div className="container mx-auto py-10 px-4">
