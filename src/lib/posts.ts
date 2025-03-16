@@ -1,4 +1,4 @@
-import FusionCollection from "fusionable/FusionCollection";
+import FusionCollection, { OperatorEnum } from "fusionable/FusionCollection";
 import { s } from "./slug";
 
 export const getContent = () => {
@@ -8,11 +8,21 @@ export const getContent = () => {
   return collection;
 };
 
-export const getAllPosts = (limit?: number) => {
-  const posts = limit
-    ? getContent().limit(limit).getItemsArray()
-    : getContent().getItemsArray();
-  return posts;
+interface PostFilter {
+  key: string;
+  operator: OperatorEnum;
+  value: unknown;
+}
+
+export const getAllPosts = (limit?: number, filter?: PostFilter) => {
+  const postLimit =
+    limit && limit > 0 ? getContent().limit(limit) : getContent();
+
+  const postFilter = filter
+    ? postLimit.filter(filter.key, filter.operator, filter.value)
+    : postLimit;
+
+  return postFilter.getItemsArray();
 };
 
 export const getPostBySlug = (slug: string) => {
