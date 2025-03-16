@@ -5,11 +5,7 @@ description: "Panduan awal untuk memulai pengembangan web menggunakan framework 
 date: "2018-12-04T06:42:16+07:00" 
 highlight: false
 draft: false
-tags:
-  - laravel
-  - php
-  - web development
-  - beginner
+tags: ["laravel", "php", "web-development", "beginner"]
 cover: /assets/images/uploads/2018/12/Tutorial-Dasar-Menggunakan-Framework-Laravel.png
 author: yadi
 ---

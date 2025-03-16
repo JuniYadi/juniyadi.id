@@ -6,11 +6,7 @@ date: "2019-04-01T09:19:53+07:00"
 highlight: false
 draft: false
 category: debian
-tags:
-  - Debian
-  - Repository
-  - Mirror
-  - Tutorial
+tags: ["debian", "repository", "mirror", "tutorial"]
 cover: /assets/images/uploads/2019/04/Selection_01006.png
 author: yadi
 ---

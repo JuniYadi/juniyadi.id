@@ -6,11 +6,7 @@ date: "2018-12-01T19:46:00+07:00"
 highlight: false
 draft: false
 category: software Tools
-tags:
-  - "Software Editors"
-  - "Browser Addons"
-  - "Programming Tools"
-  - "Coding"
+tags: ["software-editors", "browser-addons", "programming-tools", "coding"]
 cover: /assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer.jpg
 author: yadi
 ---

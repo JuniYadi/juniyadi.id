@@ -6,11 +6,7 @@ date: "2021-11-27T10:11:00+07:00"
 highlight: false
 draft: false
 category: networking
-tags:
-  - "IP Address"
-  - "CIDR"
-  - "Networking"
-  - "Local IP"
+tags: ["ip-address", "cidr", "networking", "local-ip"]
 cover: /assets/images/uploads/2021/11/network.jpg
 author: yadi
 ---

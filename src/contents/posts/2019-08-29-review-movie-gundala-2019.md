@@ -6,7 +6,7 @@ slug: review-movie-gundala-2019
 description: "In-depth review of Gundala (2019) exploring its cinematic appeal, dynamic action sequences, and refreshing take on Indonesian superhero storytelling."
 highlight: false
 draft: false
-tags: ["movie-review", "indonesian-superhero", "Gundala", "cinema"]
+tags: ["movie-review", "indonesian-superhero", "gundala", "cinema"]
 cover: "/assets/images/uploads/2019/09/gundala.jpg"
 date: "2019-08-29T20:46:14+07:00"
 featured: false

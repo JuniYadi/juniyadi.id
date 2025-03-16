@@ -7,11 +7,7 @@ highlight: false
 draft: false
 categories:
   - Tutorial
-tags:
-  - SSL
-  - Nginx
-  - Ubuntu
-  - ZeroSSL
+tags: ["ssl", "nginx", "ubuntu", "zerossl"]
 cover: /assets/images/uploads/2021/11/zerossl-free.jpg
 author: yadi
 ---

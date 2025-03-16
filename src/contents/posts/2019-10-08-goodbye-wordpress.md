@@ -4,7 +4,7 @@ slug: "goodbye-wordpress"
 description: "Halo sobat yadi, blog ini telah berjalan lebih dari satu tahun menggunakan WordPress, namun kini beralih ke Jekyll + Github Pages untuk fokus pada konten."
 author: yadi
 categories: [meta]
-tags: [wordpress, jekyll, github-pages, markdown]
+tags: ["wordpress", "jekyll", "github-pages", "markdown"]
 cover: "/assets/images/uploads/2019/10/close-up-code-coding.jpg"
 date: "2019-10-08T10:12:00+07:00"
 highlight: false

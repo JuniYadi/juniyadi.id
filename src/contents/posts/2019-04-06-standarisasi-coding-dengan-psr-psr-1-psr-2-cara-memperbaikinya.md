@@ -6,11 +6,7 @@ date: "2019-04-06T03:39:08+07:00"
 highlight: false
 draft: false
 category: "Coding Standards"
-tags:
-  - PHP
-  - Coding Standards
-  - PSR
-  - PHP-CS-Fixer
+tags: ["php", "coding-standards", "psr", "php-cs-fixer"]
 cover: /assets/images/uploads/2019/04/php_psr.png
 author: yadi
 ---

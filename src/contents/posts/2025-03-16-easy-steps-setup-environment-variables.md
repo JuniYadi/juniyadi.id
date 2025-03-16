@@ -6,16 +6,7 @@ date: "2025-03-16T05:19:41Z"
 highlight: false
 draft: false
 category: "Programming"
-tags:
-  [
-    "Environment Variables",
-    "Linux",
-    "macOS",
-    "Windows",
-    "Java",
-    "Python",
-    "Node.js",
-  ]
+tags: ["environment-variables", "linux", "macos", "windows", "java", "python", "node.js"]
 cover: "/assets/images/uploads/2025/03/easy-steps-setup-environment-variables.png"
 author: "yadi"
 ---

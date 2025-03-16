@@ -5,11 +5,7 @@ description: "Panduan lengkap membuat SMS Gateway menggunakan Gammu, USB Modem d
 date: "2018-12-03T05:25:26+07:00"
 highlight: false
 draft: false
-tags:
-  - SMS Gateway
-  - Gammu
-  - USB Modem
-  - MySQL
+tags: ["sms-gateway", "gammu", "usb-modem", "mysql"]
 cover: /assets/images/uploads/2018/12/sms-gateway.jpg
 author: yadi
 ---
@@ -68,8 +64,7 @@ $ dmesg|grep tty
 [  114.657777] option1 ttyUSB1: GSM modem (1-port) converter now disconnected from ttyUSB1
 [  114.658031] option1 ttyUSB2: usb_wwan_indat_callback: resubmit read urb failed. (-2)
 [  114.658036] option1 ttyUSB2: usb_wwan_indat_callback: resubmit read urb failed. (-2)
-[  114.658040] option1 ttyUSB2: usb_wwan_indat_callback: resubmit read urb failed. (-2)
-[  114.662507] option1 ttyUSB2: GSM modem (1-port) converter now disconnected from ttyUSB2
+[  114.658040] option1 ttyUSB2: GSM modem (1-port) converter now disconnected from ttyUSB2
 [  115.513745] usb 2-1.2: GSM modem (1-port) converter now attached to ttyUSB0
 [  115.513949] usb 2-1.2: GSM modem (1-port) converter now attached to ttyUSB1
 [  115.514049] usb 2-1.2: GSM modem (1-port) converter now attached to ttyUSB2
@@ -400,23 +395,3 @@ BEGIN
 END;//
 
 DELIMITER ;
-```
-
-# Kirim SMS Menggunakan Database MySQL dengan Gammu
-
-Ada 2 cara untuk kirim dengan database, yaitu dengan command atau sql query. jika via command seperti ini :
-```bash
-$ echo "Coba Kirim Dari gammu-smsd By Blog JuniYadi" | sudo -u gammu gammu-smsd-inject TEXT 0812xxxxxx4
-Written message with ID 1
-```
-
-atau via query seperti ini :
-```sql
-INSERT INTO outbox (DestinationNumber, TextDecoded, CreatorID)
-VALUES ('0812xxxxxxxxx', 'Coba Kirim Dari gammu-smsd By Blog JuniYadi', 'Gammu 1.39.0');
-```
-
-### Catatan penulis :
-> Tidak ada jaminan semua modem bisa bekerja secara normal dengan gammu, untuk cek apakah hardware usb modem anda didukung oleh gammu atau tidak, bisa langsung ke halaman berikut : https://wammu.eu/phones/
-
-Sekian tutorial kali ini, Semoga Bermanfaat.

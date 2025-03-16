@@ -5,11 +5,7 @@ description: "Panduan merubah tampilan terminal Linux melalui trik mengganti fon
 date: "2018-12-03T11:17:20+07:00"
 highlight: false
 draft: false
-tags:
-  - linux
-  - terminal
-  - customization
-  - tips
+tags: ["linux", "terminal", "customization", "tips"]
 cover: /assets/images/uploads/2018/12/terminal-linux.jpg
 author: yadi
 category: linux

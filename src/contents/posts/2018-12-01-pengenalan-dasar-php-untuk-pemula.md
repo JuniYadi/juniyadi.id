@@ -3,11 +3,7 @@ title: "Pengenalan Dasar PHP Untuk Pemula"
 slug: pengenalan-dasar-php-untuk-pemula
 description: "Tutorial dasar PHP yang membahas tag, variabel, dan perintah dasar melalui contoh kode sederhana untuk pemula."
 category: php
-tags:
-  - PHP
-  - Programming
-  - Tutorial
-  - Beginner
+tags: ["php", "programming", "tutorial", "beginner"]
 cover: /assets/images/uploads/2018/12/php-logo.png
 author: yadi
 ---

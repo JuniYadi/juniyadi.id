@@ -6,7 +6,7 @@ date: "2025-03-16T00:36:27Z"
 highlight: false
 draft: false
 category: "Cloud Computing"
-tags: ["Cloudflare", "Serverless", "DevOps", "JavaScript", "Web Development"]
+tags: ["cloudflare", "serverless", "devops", "javascript", "web-development"]
 cover: "/assets/images/uploads/2025/03/cloudflare-worker-intro.png"
 author: "yadi"
 ---

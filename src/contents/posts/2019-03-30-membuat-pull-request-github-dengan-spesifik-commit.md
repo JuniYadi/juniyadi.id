@@ -6,11 +6,7 @@ date: "2019-03-30T12:03:25+07:00"
 highlight: false
 draft: false
 categories: [Tutorial]
-tags:
-  - git
-  - github
-  - pull-request
-  - cherry-pick
+tags: ["git", "github", "pull-request", "cherry-pick"]
 cover: /assets/images/uploads/2019/03/Selection_00997.png
 author: yadi
 ---

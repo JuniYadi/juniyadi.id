@@ -5,11 +5,7 @@ description: "Docker adalah teknologi container yang memudahkan deployment dan p
 date: "2019-03-28T21:35:10+07:00"
 highlight: false 
 draft: false
-tags:
-  - Docker
-  - Containerization
-  - Deployment
-  - Efficiency
+tags: ["docker", "containerization", "deployment", "efficiency"]
 category: docker
 cover: /assets/images/uploads/2019/03/docker.png
 author: yadi

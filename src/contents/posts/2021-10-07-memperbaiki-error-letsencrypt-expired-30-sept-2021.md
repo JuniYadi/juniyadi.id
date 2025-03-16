@@ -6,7 +6,7 @@ highlight: false
 draft: false
 author: yadi
 category: security
-tags: ["Let's Encrypt", "SSL", "Certificate Renewal", "Troubleshooting"]
+tags: ["lets-encrypt", "ssl", "certificate-renewal", "troubleshooting"]
 cover: "/assets/images/uploads/2021/10/letsencrypt.jpg"
 date: "2021-10-07T15:30:00+07:00"
 featured: false

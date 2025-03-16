@@ -6,7 +6,7 @@ date: "2025-03-16T09:01:08Z"
 highlight: false
 draft: true
 category: "AWS"
-tags: ["AWS CLI", "eksctl", "EKS", "DevOps"]
+tags: ["aws-cli", "eksctl", "eks", "devops"]
 cover: "/draft.png"
 author: "yadi"
 ---

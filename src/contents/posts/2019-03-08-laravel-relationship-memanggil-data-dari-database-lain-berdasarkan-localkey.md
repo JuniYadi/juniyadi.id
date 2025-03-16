@@ -6,11 +6,7 @@ date: "2019-03-08T04:54:38+07:00"
 highlight: false
 draft: false
 category: laravel
-tags:
-  - Laravel
-  - Eloquent
-  - Database
-  - Relationships
+tags: ["laravel", "eloquent", "database", "relationships"]
 cover: /assets/images/uploads/2018/12/Tutorial-Dasar-Menggunakan-Framework-Laravel.png
 author: yadi
 ---

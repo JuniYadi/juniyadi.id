@@ -6,11 +6,7 @@ date: "2019-03-09T04:19:38+07:00"
 highlight: false
 draft: false
 categories: ["jQuery", "Tutorial"]
-tags:
-  - jQuery
-  - JavaScript
-  - HTML
-  - Tutorial
+tags: ["jquery", "javascript", "html", "tutorial"]
 cover: /assets/images/uploads/2019/03/jquery.png
 author: yadi
 ---

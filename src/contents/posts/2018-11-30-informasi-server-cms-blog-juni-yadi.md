@@ -6,11 +6,7 @@ date: "2018-11-30T07:50:28+07:00"
 highlight: false
 draft: false
 category: server
-tags:
-  - server
-  - configuration
-  - cms
-  - wordpress
+tags: ["cms", "configuration", "server", "wordpress"]
 cover: "/assets/images/uploads/2018/11/server.jpg"
 author: "yadi"
 ---

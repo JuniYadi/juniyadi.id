@@ -6,11 +6,7 @@ date: "2018-11-30T09:46:14+07:00"
 highlight: false
 draft: false
 category: tutorial
-tags:
-  - Telegram
-  - Bot
-  - Tutorial
-  - API
+tags: ["telegram", "bot", "tutorial", "api"]
 cover: /assets/images/uploads/2018/11/Tutorial-Membuat-Bot-Telegram-Tombol-Start.png
 author: yadi
 ---

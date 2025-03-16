@@ -6,11 +6,7 @@ highlight: false
 draft: false
 author: yadi
 category: linux
-tags:
-  - Linux
-  - Command Line
-  - Tutorial
-  - Beginner
+tags: ["linux", "command-line", "tutorial", "beginner"]
 cover: "/assets/images/uploads/2019/05/Selection_01146.png"
 date: "2019-05-13T04:46:47+07:00"
 featured: false

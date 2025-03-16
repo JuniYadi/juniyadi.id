@@ -6,7 +6,7 @@ date: "2025-03-16T08:38:27Z"
 highlight: false
 draft: true
 category: "Cloud Computing"
-tags: ["AWS", "EKS", "Kubernetes", "Containerization"]
+tags: ["aws", "eks", "kubernetes", "containerization"]
 cover: "https://picsum.photos/800/400"
 author: "yadi"
 ---

@@ -6,11 +6,7 @@ date: "2022-07-27T10:00:00+07:00"
 highlight: false
 draft: false
 category: ubuntu
-tags:
-  - Ubuntu
-  - Bluetooth
-  - Audio
-  - PulseAudio
+tags: ["ubuntu", "bluetooth", "audio", "pulseaudio"]
 cover: /assets/images/uploads/2022/07/ubuntu-bluetooth.png
 author: yadi
 ---

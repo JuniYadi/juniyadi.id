@@ -6,11 +6,7 @@ date: "2019-03-29T07:47:38+07:00"
 highlight: false
 draft: false
 category: docker
-tags:
-  - Docker
-  - Debian
-  - CLI
-  - Tutorial
+tags: ["docker", "debian", "cli", "tutorial"]
 cover: /assets/images/uploads/2019/03/docker-debian.png
 author: yadi
 ---
