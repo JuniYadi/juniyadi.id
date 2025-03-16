@@ -95,3 +95,15 @@ export const getPostsWithGrouped = (
 
   return groups;
 };
+
+export const getAllCategories = (): string[] => {
+  const posts = getAllPosts(0);
+  const categories = posts.map((post) => post.fields.category);
+  return categories;
+};
+
+export const getPostsByTag = (tag: string) => {
+  const posts = getAllPosts(0);
+  const postsByTag = posts.filter((post) => post.fields.tags.includes(tag));
+  return postsByTag;
+};
