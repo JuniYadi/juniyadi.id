@@ -5,7 +5,7 @@ description: "Daftar rekomendasi software editor dan addons browser yang nyaman 
 date: "2018-12-01T19:46:00+07:00"
 highlight: false
 draft: false
-category: Software Tools
+category: software Tools
 tags:
   - "Software Editors"
   - "Browser Addons"

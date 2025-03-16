@@ -5,7 +5,7 @@ description: "Panduan lengkap mengganti repository Debian ke mirror server lokal
 date: "2019-04-01T09:19:53+07:00"
 highlight: false
 draft: false
-category: Debian
+category: debian
 tags:
   - Debian
   - Repository

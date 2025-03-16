@@ -5,7 +5,7 @@ description: "Implementasi relasi database di Laravel dengan kunci lokal kustom.
 date: "2019-03-08T04:54:38+07:00"
 highlight: false
 draft: false
-category: Laravel
+category: laravel
 tags:
   - Laravel
   - Eloquent

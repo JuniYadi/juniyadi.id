@@ -9,8 +9,8 @@ category: server
 tags:
   - server
   - configuration
-  - CMS
-  - WordPress
+  - cms
+  - wordpress
 cover: "/assets/images/uploads/2018/11/server.jpg"
 author: "yadi"
 ---

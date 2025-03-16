@@ -12,7 +12,7 @@ tags:
   - tips
 cover: /assets/images/uploads/2018/12/terminal-linux.jpg
 author: yadi
-category: Linux
+category: linux
 ---
 
 Sobat Yadi, jika anda saat ini menggunakan linux, tentu sudah tidak asing lagi dengan terminal linux, tunggu dulu, terminal disini bukan terminal bus angkutan kota antar provinsi atau terminal colokan listrik ya.

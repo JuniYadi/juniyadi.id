@@ -10,7 +10,7 @@ tags:
   - Containerization
   - Deployment
   - Efficiency
-category: Docker
+category: docker
 cover: /assets/images/uploads/2019/03/docker.png
 author: yadi
 ---

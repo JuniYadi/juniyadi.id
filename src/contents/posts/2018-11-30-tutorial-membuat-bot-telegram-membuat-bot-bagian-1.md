@@ -5,7 +5,7 @@ description: "Panduan langkah demi langkah mengajarkan cara membuat bot Telegram
 date: "2018-11-30T09:46:14+07:00"
 highlight: false
 draft: false
-category: Tutorial
+category: tutorial
 tags:
   - Telegram
   - Bot
