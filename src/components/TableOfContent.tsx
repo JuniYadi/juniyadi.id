@@ -44,7 +44,7 @@ export function TableOfContent({ items }: TableOfContentProps) {
   useEffect(() => {
     // Only apply auto-scrolling on desktop/larger screens
     const isMobile = window.innerWidth < 768; // Standard breakpoint for mobile
-    
+
     if (activeId && !isMobile) {
       // Find the active TOC item link by its href
       const activeTocLink = document.querySelector(
@@ -98,7 +98,7 @@ export function TableOfContent({ items }: TableOfContentProps) {
   if (items.tocs.length === 0) return null;
 
   return (
-    <div className="prose prose-base dark:prose-invert mb-8 rounded-lg border border-gray-200 p-4 dark:border-gray-700 sticky top-16 max-h-[calc(100vh-160px)] overflow-y-auto z-10 bg-white dark:bg-gray-900 self-start [&_a]:no-underline">
+    <div className="prose prose-base dark:prose-invert mb-2 rounded-lg border border-gray-200 p-4 dark:border-gray-700 sticky top-2 max-h-[calc(100vh-160px)] overflow-y-auto z-10 bg-white dark:bg-gray-900 self-start [&_a]:no-underline">
       <nav className="toc-nav">
         <ul className="space-y-1 text-sm">
           {items.tocs.map((item, index) => {
