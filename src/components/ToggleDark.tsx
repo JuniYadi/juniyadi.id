@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, LoaderCircle } from "lucide-react";
 
 const ToggleDark = () => {
   const { theme, setTheme } = useTheme();
@@ -12,18 +12,11 @@ const ToggleDark = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return (
-      <button
-        className="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-        aria-label="Toggle dark mode"
-      >
-        <Sun className="w-5 h-5" />
-      </button>
-    );
-  }
-
-  return (
+  return !mounted ? (
+    <>
+      <LoaderCircle className="w-5 h-5 animate-spin" />
+    </>
+  ) : (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
