@@ -1,16 +1,16 @@
-import { MDXRemote } from "next-mdx-remote/rsc";
-import { notFound } from "next/navigation";
-import matter from "gray-matter";
-import { Metadata } from "next";
-import Image from "next/image";
 import Comments from "@/components/Comments";
-import { s } from "@/lib/slug";
-import { getAllPosts, getPostBySlug } from "@/lib/posts";
-import { formatDateTime } from "@/lib/date";
-import { MarkdownOptions } from "@/lib/markdown";
+import Image from "next/image";
+import matter from "gray-matter";
 import Pre from "@/components/Pre";
-import { getTocBySlug } from "@/lib/toc";
 import TableOfContent from "@/components/TableOfContent";
+import { formatDateTime } from "@/lib/date";
+import { getAllPosts, getPostBySlug } from "@/lib/posts";
+import { getTocBySlug } from "@/lib/toc";
+import { MarkdownOptions } from "@/lib/markdown";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { s } from "@/lib/slug";
 import { TOCItem } from "@/types/toc";
 
 // Force static generation
@@ -158,7 +158,9 @@ export default function Page({ params }: { params: { slug: string } }) {
           {/* Table of Contents Sidebar - Desktop only version */}
           <aside className="hidden lg:block">
             <div className="sticky top-20">
-              <h2 className="mb-3 text-lg font-medium dark:text-gray-300">Table of Contents</h2>
+              <h2 className="mb-3 text-lg font-medium dark:text-gray-300">
+                Table of Contents
+              </h2>
               {tocsData ? (
                 <TableOfContent items={{ tocs: tocsData }} />
               ) : (
