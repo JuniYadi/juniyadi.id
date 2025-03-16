@@ -2,6 +2,7 @@
 
 import React, { type ElementRef, useRef, useState } from "react";
 import { Copy, CheckCheck } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const Pre = (props: React.ComponentPropsWithoutRef<"pre">) => {
   const preRef = useRef<ElementRef<"pre">>(null);
@@ -37,9 +38,7 @@ const Pre = (props: React.ComponentPropsWithoutRef<"pre">) => {
     <div className="rounded overflow-hidden border border-gray-700 mb-4">
       {/* Title bar with language and copy button */}
       <div className="bg-gray-800 px-4 py-2 flex justify-between items-center">
-        <span className="text-xs text-gray-300">
-          {language || "code"}
-        </span>
+        <span className="text-xs text-gray-300">{language || "code"}</span>
         <button
           className="bg-gray-700 hover:bg-gray-600 border-none cursor-pointer rounded p-1 transition-all flex items-center justify-center"
           onClick={onCopy}
@@ -52,9 +51,9 @@ const Pre = (props: React.ComponentPropsWithoutRef<"pre">) => {
           )}
         </button>
       </div>
-      
+
       {/* Original pre element with simplified styling */}
-      <pre ref={preRef} {...props} className={props.className}>
+      <pre ref={preRef} {...props} className={cn("not-prose", props.className)}>
         {props.children}
       </pre>
     </div>
