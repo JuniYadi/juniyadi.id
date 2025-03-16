@@ -10,3 +10,10 @@ export const s = (text: string | null | undefined): string => {
     remove: /[*+~.()'"!:@]/g,
   });
 };
+
+export const getTitleCase = (text: string): string => {
+  return text
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
