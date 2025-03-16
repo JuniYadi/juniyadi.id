@@ -4,7 +4,7 @@ slug: "deploying-your-first-kubernetes-cluster-with-aws-eks"
 description: "Learn how to set up your first AWS EKS cluster, configure kubectl, and deploy a sample app."
 date: "2025-03-16T08:38:27Z"
 highlight: false
-draft: false
+draft: true
 category: "Cloud Computing"
 tags: ["AWS", "EKS", "Kubernetes", "Containerization"]
 cover: "https://picsum.photos/800/400"
