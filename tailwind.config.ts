@@ -13,8 +13,8 @@ const config: Config = {
       typography: {
         DEFAULT: {
           css: {
-            pre: false,
-            code: false,
+            pre: null,
+            code: null,
           },
         },
       },
