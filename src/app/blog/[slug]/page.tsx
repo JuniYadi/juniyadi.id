@@ -135,18 +135,18 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <a
                   key={`category-${s(itemContent.fields.category)}`}
                   href={`/categories/${s(itemContent.fields.category)}`}
-                  className="inline-block bg-blue-500 hover:bg-blue-700 text-white text-xs px-2 py-1 rounded-full mr-2"
+                  className="inline-block bg-blue-500 dark:bg-blue-700 hover:bg-blue-700 dark:hover:bg-blue-900 text-white text-xs px-2 py-1 rounded-full mr-2"
                 >
                   {itemContent.fields.category}
                 </a>
               </div>
-              <div className="text-sm text-gray-500 mb-2">
+              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">
                 Tags:{" "}
                 {itemContent.fields.tags.map((tag: string) => (
                   <a
                     key={`tag-${s(tag)}`}
                     href={`/tags/${s(tag)}`}
-                    className="inline-block bg-gray-500 hover:bg-gray-700 text-white text-xs px-2 py-1 rounded-full mr-2"
+                    className="inline-block bg-gray-500 dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-900 text-white text-xs px-2 py-1 rounded-full mr-2"
                   >
                     #{s(tag)}
                   </a>
@@ -158,7 +158,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           {/* Table of Contents Sidebar - Desktop only version */}
           <aside className="hidden lg:block">
             <div className="sticky top-20">
-              <h2 className="mb-3 text-lg font-medium">Table of Contents</h2>
+              <h2 className="mb-3 text-lg font-medium dark:text-gray-300">Table of Contents</h2>
               {tocsData ? (
                 <TableOfContent items={{ tocs: tocsData }} />
               ) : (
