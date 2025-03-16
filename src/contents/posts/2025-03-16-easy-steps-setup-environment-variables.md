@@ -5,7 +5,7 @@ description: "Learn how to set up environment variables on Linux, macOS, and Win
 date: "2025-03-16T05:19:41Z"
 highlight: false
 draft: false
-category: "Programming"
+category: "programming"
 tags: ["environment-variables", "linux", "macos", "windows", "java", "python", "node.js"]
 cover: "/assets/images/uploads/2025/03/easy-steps-setup-environment-variables.png"
 author: "yadi"

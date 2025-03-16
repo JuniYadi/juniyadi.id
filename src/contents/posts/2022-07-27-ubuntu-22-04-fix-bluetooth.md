@@ -5,7 +5,7 @@ description: "Panduan memperbaiki kualitas audio Bluetooth di Ubuntu 22.04: inst
 date: "2022-07-27T10:00:00+07:00"
 highlight: false
 draft: false
-category: ubuntu
+category: "ubuntu"
 tags: ["ubuntu", "bluetooth", "audio", "pulseaudio"]
 cover: /assets/images/uploads/2022/07/ubuntu-bluetooth.png
 author: yadi

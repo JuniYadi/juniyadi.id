@@ -5,6 +5,7 @@ description: "Panduan lengkap membuat SMS Gateway menggunakan Gammu, USB Modem d
 date: "2018-12-03T05:25:26+07:00"
 highlight: false
 draft: false
+category: "tutorial"
 tags: ["sms-gateway", "gammu", "usb-modem", "mysql"]
 cover: /assets/images/uploads/2018/12/sms-gateway.jpg
 author: yadi
@@ -16,13 +17,14 @@ Hai Sobat Yadi, kali ini saya akan membahas tentang SMS Gateway, project ini dil
 
 Sebelum kita mulai, saya informasikan peralatan yang saya gunakan :
 
-* Modem = Vodafone Huawei K4510
-* OS = Ubuntu 16.04.5 LTS
-* Kernel Versi = 4.13.0-45-generic
-* Perangkat Utama = Laptop + USB HUB (Karena port laptop saya cuma 2)
-* Database = 10.3.10-MariaDB-1:10.3.10+maria~xenial (Jika anda belum menginstall database, silahkan ikuti tutorial pada halaman medium berikut)
+- Modem = Vodafone Huawei K4510
+- OS = Ubuntu 16.04.5 LTS
+- Kernel Versi = 4.13.0-45-generic
+- Perangkat Utama = Laptop + USB HUB (Karena port laptop saya cuma 2)
+- Database = 10.3.10-MariaDB-1:10.3.10+maria~xenial (Jika anda belum menginstall database, silahkan ikuti tutorial pada halaman medium berikut)
 
 # Installasi Gammu
+
 Tambahkan PPA Gammu agar mendapatkan versi terbaru, karena jika langsung install, maka akan terinstall hanya pada versi 1.37.0 , sedangkan saat ini (3 desember 2018) versi baru yaitu 1.39.0. ([Link PPA](https://launchpad.net/~nijel/+archive/ubuntu/ppa))
 
 ```bash
@@ -32,13 +34,14 @@ sudo apt-get install gammu-smsd gammu python-gammu usb-modeswitch -y
 ```
 
 # Konfigurasi Gammu
-Setelah installasi,  jalankan perintah lsubs untuk mengecek apakah usb-modem yang anda gunakan sudah terhubung ke laptop/pc anda :
+
+Setelah installasi, jalankan perintah lsubs untuk mengecek apakah usb-modem yang anda gunakan sudah terhubung ke laptop/pc anda :
 
 ```bash
 $ lsusb
-Bus 002 Device 005: ID 258a:0016  
-Bus 002 Device 015: ID 10c4:8108 Cygnal Integrated Products, Inc. 
-Bus 002 Device 017: ID 12d1:14cb Huawei Technologies Co., Ltd. 
+Bus 002 Device 005: ID 258a:0016
+Bus 002 Device 015: ID 10c4:8108 Cygnal Integrated Products, Inc.
+Bus 002 Device 017: ID 12d1:14cb Huawei Technologies Co., Ltd.
 Bus 002 Device 014: ID 1a40:0101 Terminus Technology Inc. Hub
 Bus 002 Device 002: ID 8087:0020 Intel Corp. Integrated Rate Matching Hub
 Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
@@ -83,13 +86,16 @@ Pada hasil diatas, usb telah terhubung ke `ttyUSB0` selanjutnya kita konfigurasi
 Rubah configurasi seperti diatas kemudian pilih save untuk menyimpan konfigurasinya. File konfigurasi tersimpan pada path `$ ~/.gammurc`
 
 # Pengetesan Gammu
-Masukkan perintah : 
+
+Masukkan perintah :
+
 ```bash
 $ gammu getallsms
 0 SMS parts in 0 SMS sequences
 ```
 
 Jika hasil nya seperti diatas, maka gammu sudah terhubung ke modem anda, dan sudah siap digunakan, untuk kirim sms, bisa langsung dengan command berikut (ganti 0812xxxxxxx4 dengan nomor anda) :
+
 ```bash
 $ echo "Coba Kirim Dari Gammu By Blog JuniYadi" | gammu sendsms TEXT 0812xxxxxxx4
 If you want break, press Ctrl+C...
@@ -99,13 +105,15 @@ Sending SMS 1/1....waiting for network answer..OK, message reference=213
 sekarang cek hp sobat yang digunakan pada nomor diatas, jika masuk sms nya, berarti anda sudah berhasil kirim sms via command terminal linux.
 
 # Menghubungkan Gammu ke Database MySQL
+
 Untuk menghubungkan modem usb kita ke database mysql, pertama kita harus membuat database dahulu.
 
 > Disini saya membuat nama databasenya yaitu : sms_gateway
 
 > Anda juga bisa menggunakan nama database, nama user dan password sesuai dengan yang buat di database mysql
 
-kemudian, kita harus mengedit file : `/etc/gammu-smsdrc` .. kemudian samakan datanya dengan baris dibawah ini (untuk  :
+kemudian, kita harus mengedit file : `/etc/gammu-smsdrc` .. kemudian samakan datanya dengan baris dibawah ini (untuk :
+
 ```bash
 $ sudo nano /etc/gammu-smsdrc
 # Configuration file for Gammu SMS Daemon
@@ -128,10 +136,12 @@ password = xxxxx
 ```
 
 pada konfigurasi diatas :
+
 1. pada bagian device dan connection samakan dengan konfigurasi sebelumnya
 2. pada [smsd] , rubah bagian database , username, dan password
 
 Restart dan cek Status service gammu jika konfigurasi telah selesai :
+
 ```bash
 $ sudo systemctl restart gammu-smsd
 $ sudo systemctl status gammu-smsd
@@ -153,6 +163,7 @@ Dec 03 03:44:32 yadi-PFN systemd[1]: Started LSB: Gammu SMS daemon.
 ```
 
 # Membuat Table di Database MySQL untuk Gammu
+
 Ini merupakan tahap penting karna jika table database tidak dibuat, maka ketika kirim pesan akan muncul beberapa error.
 
 untuk membuat databasenya, langsung saja ke phpmyadmin, kemudian jalankan sql query dibawah ini atau anda juga bisa import langsung dengan mendownload file konfigurasi dibawah ini dan jalankan command :
@@ -162,33 +173,33 @@ $ mysql -u username -p sms_gateway < gammu-mysql.sql
 ```
 
 ```sql
--- 
+--
 -- Database for Gammu SMSD
--- 
+--
 -- In case you get errors about not supported charset, please
 -- replace utf8mb4 with utf8.
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Table structure for table `gammu`
--- 
+--
 
 CREATE TABLE `gammu` (
   `Version` integer NOT NULL default '0' PRIMARY KEY
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
--- 
+--
 -- Dumping data for table `gammu`
--- 
+--
 
 INSERT INTO `gammu` (`Version`) VALUES (17);
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Table structure for table `inbox`
--- 
+--
 
 CREATE TABLE `inbox` (
   `UpdatedInDB` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
@@ -207,16 +218,16 @@ CREATE TABLE `inbox` (
   PRIMARY KEY `ID` (`ID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
 
--- 
+--
 -- Dumping data for table `inbox`
--- 
+--
 
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Table structure for table `outbox`
--- 
+--
 
 CREATE TABLE `outbox` (
   `UpdatedInDB` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
@@ -247,16 +258,16 @@ CREATE TABLE `outbox` (
 CREATE INDEX outbox_date ON outbox(SendingDateTime, SendingTimeOut);
 CREATE INDEX outbox_sender ON outbox(SenderID(250));
 
--- 
+--
 -- Dumping data for table `outbox`
--- 
+--
 
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Table structure for table `outbox_multipart`
--- 
+--
 
 CREATE TABLE `outbox_multipart` (
   `Text` text,
@@ -271,15 +282,15 @@ CREATE TABLE `outbox_multipart` (
   PRIMARY KEY (`ID`, `SequencePosition`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
--- 
+--
 -- Dumping data for table `outbox_multipart`
--- 
+--
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Table structure for table `phones`
--- 
+--
 
 CREATE TABLE `phones` (
   `ID` text NOT NULL,
@@ -300,15 +311,15 @@ CREATE TABLE `phones` (
   PRIMARY KEY (`IMEI`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
--- 
+--
 -- Dumping data for table `phones`
--- 
+--
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Table structure for table `sentitems`
--- 
+--
 
 CREATE TABLE `sentitems` (
   `UpdatedInDB` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
@@ -339,14 +350,14 @@ CREATE INDEX sentitems_tpmr ON sentitems(TPMR);
 CREATE INDEX sentitems_dest ON sentitems(DestinationNumber);
 CREATE INDEX sentitems_sender ON sentitems(SenderID(250));
 
--- 
+--
 -- Dumping data for table `sentitems`
--- 
+--
 
 
--- 
+--
 -- Triggers for setting default timestamps
--- 
+--
 
 DELIMITER //
 
@@ -395,3 +406,4 @@ BEGIN
 END;//
 
 DELIMITER ;
+```

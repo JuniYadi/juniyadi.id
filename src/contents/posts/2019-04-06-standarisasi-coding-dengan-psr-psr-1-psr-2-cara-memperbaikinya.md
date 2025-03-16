@@ -5,7 +5,7 @@ description: "Panduan lengkap untuk meningkatkan kualitas coding dengan menerapk
 date: "2019-04-06T03:39:08+07:00"
 highlight: false
 draft: false
-category: "Coding Standards"
+category: "programming"
 tags: ["php", "coding-standards", "psr", "php-cs-fixer"]
 cover: /assets/images/uploads/2019/04/php_psr.png
 author: yadi

@@ -5,7 +5,7 @@ description: "Daftar rekomendasi software editor dan addons browser yang nyaman 
 date: "2018-12-01T19:46:00+07:00"
 highlight: false
 draft: false
-category: software Tools
+category: "programming"
 tags: ["software-editors", "browser-addons", "programming-tools", "coding"]
 cover: /assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer.jpg
 author: yadi
@@ -40,19 +40,19 @@ Untuk yang edit file biasa saja, dengan Notepad++ sebenarnya sudah cukup, tapi k
 
 Disamping kita menggunakan text editor, tentu ketika hasil coding website kita misalnya telah selesai, kita juga perlu mengeceknya, berikut beberapa rekomendasi addons browser menurut saya :
 
-* Wappalyzer [Chrome](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=id) – [Firefox](https://addons.mozilla.org/id/firefox/addon/wappalyzer/) (Untuk cek segala sesuai mengenai website mulai dari web server, framework, dsb)
+- Wappalyzer [Chrome](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=id) – [Firefox](https://addons.mozilla.org/id/firefox/addon/wappalyzer/) (Untuk cek segala sesuai mengenai website mulai dari web server, framework, dsb)
 
 ![](/assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer-Rekomendasi-Addons-Browser.png)
 
-* JSON Formatter [Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) / JSONView [Firefox](https://addons.mozilla.org/id/firefox/addon/jsonview/) (Untuk merubah result json agar mudah dibaca oleh manusia)
+- JSON Formatter [Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) / JSONView [Firefox](https://addons.mozilla.org/id/firefox/addon/jsonview/) (Untuk merubah result json agar mudah dibaca oleh manusia)
 
 ![](/assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer-JSONFormatter.png)
 
-* Developer Tools (Tersedia oleh bawaan setiap browser chrome/firefox)
+- Developer Tools (Tersedia oleh bawaan setiap browser chrome/firefox)
 
 ![](/assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer-DeveloperTools.png)
 
-* UserAgent Switcher [Chrome](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg) / [Firefox](https://addons.mozilla.org/id/firefox/addon/user-agent-switcher-revived/)
+- UserAgent Switcher [Chrome](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg) / [Firefox](https://addons.mozilla.org/id/firefox/addon/user-agent-switcher-revived/)
 
 ![](/assets/images/uploads/2018/12/Software-atau-Addons-Browser-Rekomendasi-Untuk-Programer-UserAgent-Switcher.png)
 

@@ -3,7 +3,7 @@ title: "Cara Install Centminmod di CentOS 7"
 slug: "cara-install-centminmod-di-centos-7"
 description: "Tutorial lengkap cara install Centminmod di CentOS 7 untuk mengoptimalkan konfigurasi LEMP server secara otomatis."
 author: yadi
-categories: [server, linux]
+categories: "server"
 tags: ["centminmod", "centos", "lemp", "server-optimization"]
 cover: "/assets/images/uploads/2020/02/cara-install-centminmod-di-centos-7-001.png"
 date: "2020-02-12T15:31:00+07:00"

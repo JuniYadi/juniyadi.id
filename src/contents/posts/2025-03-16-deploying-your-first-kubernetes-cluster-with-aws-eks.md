@@ -5,8 +5,8 @@ description: "Learn how to set up your first AWS EKS cluster, configure kubectl,
 date: "2025-03-16T08:38:27Z"
 highlight: false
 draft: true
-category: "Cloud Computing"
-tags: ["aws", "eks", "kubernetes", "containerization"]
+category: "aws"
+tags: ["eks", "kubernetes", "containerization"]
 cover: "https://picsum.photos/800/400"
 author: "yadi"
 ---

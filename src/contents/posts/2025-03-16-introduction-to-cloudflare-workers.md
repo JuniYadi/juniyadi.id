@@ -5,8 +5,9 @@ description: "Learn how to set up and use Cloudflare Workers for serverless func
 date: "2025-03-16T00:36:27Z"
 highlight: false
 draft: false
-category: "Cloud Computing"
-tags: ["cloudflare", "serverless", "devops", "javascript", "web-development"]
+category: "cloudflare"
+tags:
+  ["cloudflare-worker", "serverless", "devops", "javascript", "web-development"]
 cover: "/assets/images/uploads/2025/03/cloudflare-worker-intro.png"
 author: "yadi"
 ---

@@ -5,8 +5,7 @@ description: "Panduan lengkap instalasi SSL gratis di Nginx pada Ubuntu 20.04 me
 date: "2021-11-01T13:00:00+07:00"
 highlight: false
 draft: false
-categories:
-  - Tutorial
+categories: tutorial
 tags: ["ssl", "nginx", "ubuntu", "zerossl"]
 cover: /assets/images/uploads/2021/11/zerossl-free.jpg
 author: yadi

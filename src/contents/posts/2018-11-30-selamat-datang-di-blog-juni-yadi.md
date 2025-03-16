@@ -5,8 +5,14 @@ description: "Selamat datang di blog Juni Yadi yang menyajikan pengetahuan di bi
 date: "2018-11-30T07:36:24+07:00"
 highlight: false
 draft: false
-category: "general"
-tags: ["system-administration", "front-end-development", "back-end-development", "introduction"]
+category: "blog"
+tags:
+  [
+    "system-administration",
+    "front-end-development",
+    "back-end-development",
+    "introduction",
+  ]
 cover: "/assets/images/uploads/2018/11/coding-writing.jpg"
 author: "yadi"
 ---

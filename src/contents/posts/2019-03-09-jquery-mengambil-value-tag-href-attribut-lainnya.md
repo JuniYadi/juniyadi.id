@@ -5,7 +5,7 @@ description: "Panduan lengkap mengambil nilai atribut HTML menggunakan jQuery ta
 date: "2019-03-09T04:19:38+07:00"
 highlight: false
 draft: false
-categories: ["jQuery", "Tutorial"]
+categories: tutorial
 tags: ["jquery", "javascript", "html", "tutorial"]
 cover: /assets/images/uploads/2019/03/jquery.png
 author: yadi
@@ -31,23 +31,27 @@ anda juga bisa menggunakan logika coding dibawah ini untuk attribut lainnya. tin
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-	<title>JQuery Test</title>
-</head>
-<body>
-	<a class="link" href="https://juniyadi.id">https://juniyadi.id</a>
+  <head>
+    <title>JQuery Test</title>
+  </head>
+  <body>
+    <a class="link" href="https://juniyadi.id">https://juniyadi.id</a>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
 
-	<script>
-	$('body').on('click', '.link', function (event) {
-	    event.preventDefault();
-	    var me = $(this),
-	        url = me.attr('href');
-	    console.log(url);    
-	});
-	</script>
-</body>
+    <script>
+      $("body").on("click", ".link", function (event) {
+        event.preventDefault();
+        var me = $(this),
+          url = me.attr("href");
+        console.log(url);
+      });
+    </script>
+  </body>
 </html>
 ```
 

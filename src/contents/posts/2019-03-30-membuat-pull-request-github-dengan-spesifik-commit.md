@@ -5,7 +5,7 @@ description: "Tutorial ini menjelaskan cara membuat pull request di GitHub denga
 date: "2019-03-30T12:03:25+07:00"
 highlight: false
 draft: false
-categories: [Tutorial]
+categories: github
 tags: ["git", "github", "pull-request", "cherry-pick"]
 cover: /assets/images/uploads/2019/03/Selection_00997.png
 author: yadi
@@ -16,6 +16,7 @@ Hai sobat yadi, tentunya sudah ada yang mengenal tentang git dong ? secara langs
 Misalnya ketika kita melakukan sebuah fork repository di github, kemudian kita ingin mengupdate tentu langsung klik `new pull request` dari repository github kita, kemudian muncul perubahan-perubahan yang telah kita ubah.
 
 # Permasalahan
+
 Saya melakukan kontribusi ke sebuah repository, dimana akan melakukan beberapa update, jika hanya 1x anda melakukan pull request tentu tidak akan masalah.
 
 Bagaimana jika kemudian setelah pull request pertama saya disetujui kemudian melakukan perubahan kembali, automatis commit sebelumnya akan ikut ke dalam pull request kembali.
@@ -37,11 +38,13 @@ git remote add upstream https://github.com/upstream_username/upstream_repo_name.
 ```
 
 ## Membuat Branch Baru
+
 ```bash
 git checkout -b nama-branch-baru upstream/master
 ```
 
 ## Mengambil Spesifik Commit `git cherry-pick <commit_id>`
+
 ```bash
 git cherry-pick 0e6af49
 git cherry-pick a0f0707
@@ -50,6 +53,7 @@ git cherry-pick a0f0707
 > Anda bisa menambahkan commit sebanyak yang ingin anda masukkan ke branch baru.
 
 ## Push Commit ke Branch Baru
+
 ```bash
 git push -u origin nama-branch-baru
 ```
