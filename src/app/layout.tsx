@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const font = Roboto_Mono({
-  weight: ["400", "500", "700"],
+  weight: ["200", "300", "400", "500", "700"],
   subsets: ["latin"],
 });
 
