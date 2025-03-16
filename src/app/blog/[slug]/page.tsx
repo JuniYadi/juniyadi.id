@@ -92,6 +92,14 @@ export default function Page({ params }: { params: { slug: string } }) {
           {/* Main content - blog post - now takes 3/4 of the width on large screens */}
           <main className="prose dark:prose-invert max-w-none lg:col-span-3">
             <article className="prose prose-base dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 max-w-none mx-auto w-full">
+              <h1>{itemContent.fields.title}</h1>
+              <div className="text-sm text-gray-500 mb-2">
+                Posted by {itemContent.fields.author} at{" "}
+                {itemContent.fields.date &&
+                  formatDateTime(itemContent.fields.date)}
+              </div>
+
+              <p>{itemContent.fields.description}</p>
               <Image
                 src={itemContent.fields.cover}
                 alt={itemContent.fields.title}
@@ -99,12 +107,11 @@ export default function Page({ params }: { params: { slug: string } }) {
                 height={360}
                 className="mb-8 w-full"
               />
-              <h1>{itemContent.fields.title}</h1>
-              <div className="text-sm text-gray-500 mb-2">
-                Posted by {itemContent.fields.author} at{" "}
-                {itemContent.fields.date &&
-                  formatDateTime(itemContent.fields.date)}
-              </div>
+              <MDXRemote
+                source={content}
+                options={MarkdownOptions}
+                components={{ pre: (props) => <Pre {...props} /> }}
+              />
               <div className="text-sm text-gray-500 mb-2">
                 Categories:{" "}
                 <a
@@ -127,11 +134,6 @@ export default function Page({ params }: { params: { slug: string } }) {
                   </a>
                 ))}
               </div>
-              <MDXRemote
-                source={content}
-                options={MarkdownOptions}
-                components={{ pre: (props) => <Pre {...props} /> }}
-              />
             </article>
           </main>
 
