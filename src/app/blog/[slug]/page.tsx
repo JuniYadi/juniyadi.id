@@ -139,7 +139,8 @@ export default function Page({ params }: { params: { slug: string } }) {
 
           {/* Table of Contents Sidebar - takes 1/4 of the width on large screens */}
           <aside className="lg:block">
-            <div className="sticky top-8">
+            <div className="sticky top-20">
+              <h2 className="mb-3 text-lg font-medium">Table of Contents</h2>
               {tocsData ? (
                 <TableOfContent items={{ tocs: tocsData }} />
               ) : (
