@@ -60,7 +60,7 @@ Referensi: [https://docs.microsoft.com/en-us/answers/questions/574761/getting-ne
 
 ### Manual Update (Ubuntu/Debian)
 
-```
+```bash
 mkdir -p /usr/share/ca-certificates/letsencrypt/
 curl https://letsencrypt.org/certs/isrgrootx1.pem > /usr/share/ca-certificates/letsencrypt/isrgrootx1.pem
 echo 'letsencrypt/isrgrootx1.pem' >> /etc/ca-certificates.conf

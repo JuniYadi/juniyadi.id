@@ -5,7 +5,6 @@
 pre,
 pre code {
   background-color: var(--color-code-background);
-
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -14,14 +13,15 @@ pre code {
   line-height: 1.2;
   tab-size: 2;
   hyphens: none;
+  margin: 0; /* Remove default margin */
 }
 
+/* Simplify pre styling now that it's inside a card */
 pre {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--color-text-weak);
-  border-radius: 5px;
-
+  padding: 1rem;
   overflow-x: auto;
+  border-radius: 0; /* Remove border radius as it's inside a card */
+  border: none; /* Remove border as the card has a border */
 }
 
 pre > code {
