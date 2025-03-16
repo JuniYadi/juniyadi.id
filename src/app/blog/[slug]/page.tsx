@@ -70,6 +70,8 @@ export default function Page({ params }: { params: { slug: string } }) {
     notFound();
   }
 
+  // Removed state for mobile TOC toggle
+
   // generate toc data
   const getToc = getTocBySlug(slug);
   const tocsData = getToc?.data?.headings as TOCItem[];
@@ -89,7 +91,19 @@ export default function Page({ params }: { params: { slug: string } }) {
     return (
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Main content - blog post - now takes 3/4 of the width on large screens */}
+          {/* Mobile Table of Contents - Always visible on mobile */}
+          {tocsData && tocsData.length > 0 && (
+            <div className="block lg:hidden col-span-1 mb-6">
+              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+                <h2 className="mb-3 text-lg font-medium">Table of Contents</h2>
+                <div className="max-h-60 overflow-y-auto">
+                  <TableOfContent items={{ tocs: tocsData }} />
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Main content - blog post */}
           <main className="prose dark:prose-invert max-w-none lg:col-span-3">
             <article className="prose prose-base dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 max-w-none mx-auto w-full">
               <h1>{itemContent.fields.title}</h1>
@@ -137,8 +151,8 @@ export default function Page({ params }: { params: { slug: string } }) {
             </article>
           </main>
 
-          {/* Table of Contents Sidebar - takes 1/4 of the width on large screens */}
-          <aside className="lg:block">
+          {/* Table of Contents Sidebar - Desktop only version */}
+          <aside className="hidden lg:block">
             <div className="sticky top-20">
               <h2 className="mb-3 text-lg font-medium">Table of Contents</h2>
               {tocsData ? (
