@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { TableOfContentProps, TOCItem } from "@/types/toc";
+import { cn } from "@/lib/utils";
 
 export function TableOfContent({ items }: TableOfContentProps) {
   const pathname = usePathname();
@@ -79,7 +80,7 @@ export function TableOfContent({ items }: TableOfContentProps) {
     <div className="prose prose-base dark:prose-invert mb-8 rounded-lg border border-gray-200 p-4 dark:border-gray-700 sticky top-32 max-h-[calc(100vh-160px)] overflow-y-auto z-10 bg-white dark:bg-gray-900 self-start [&_a]:no-underline">
       <h2 className="mb-3 text-lg font-medium">Table of Contents</h2>
       <nav className="toc-nav">
-        <ul className="space-y-1 text-sm list-none">
+        <ul className="space-y-1 text-sm">
           {items.tocs.map((item, index) => {
             const headingId = getHeadingId(item);
             const indentClass =
@@ -98,11 +99,12 @@ export function TableOfContent({ items }: TableOfContentProps) {
                 <a
                   href={`#${headingId}`}
                   onClick={(e) => scrollToSection(e, headingId)}
-                  className={`block rounded py-1 transition-colors hover:text-blue-500 dark:hover:text-blue-400  border-b-0 ${
+                  className={cn(
+                    "block rounded py-1 transition-colors hover:text-blue-500 dark:hover:text-blue-400  border-b-0",
                     activeId === headingId
                       ? "font-medium text-blue-600 dark:text-blue-400"
                       : "text-gray-700 dark:text-gray-300"
-                  }`}
+                  )}
                   style={{ textDecoration: "none !important" }}
                 >
                   {item.value}
