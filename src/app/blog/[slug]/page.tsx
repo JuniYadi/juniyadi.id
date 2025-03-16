@@ -91,18 +91,6 @@ export default function Page({ params }: { params: { slug: string } }) {
     return (
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Mobile Table of Contents - Always visible on mobile */}
-          {tocsData && tocsData.length > 0 && (
-            <div className="block lg:hidden col-span-1 mb-6">
-              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow-sm">
-                <h2 className="mb-3 text-lg font-medium">Table of Contents</h2>
-                <div className="max-h-60 overflow-y-auto">
-                  <TableOfContent items={{ tocs: tocsData }} />
-                </div>
-              </div>
-            </div>
-          )}
-
           {/* Main content - blog post */}
           <main className="prose dark:prose-invert max-w-none lg:col-span-3">
             <article className="prose prose-base dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 max-w-none mx-auto w-full">
@@ -114,13 +102,29 @@ export default function Page({ params }: { params: { slug: string } }) {
               </div>
 
               <p>{itemContent.fields.description}</p>
+
               <Image
                 src={itemContent.fields.cover}
                 alt={itemContent.fields.title}
                 width={640}
                 height={360}
-                className="mb-8 w-full"
+                className="mb-4 w-full"
               />
+
+              {/* Mobile Table of Contents - Always visible on mobile */}
+              {tocsData && tocsData.length > 0 && (
+                <div className="block lg:hidden col-span-1 mb-2">
+                  <div className="bg-gray-50 dark:bg-gray-800 p-2 rounded-lg shadow-sm">
+                    <h2 className="mb-3 text-lg font-medium">
+                      Table of Contents
+                    </h2>
+                    <div className="max-h-60 overflow-y-auto">
+                      <TableOfContent items={{ tocs: tocsData }} />
+                    </div>
+                  </div>
+                </div>
+              )}
+
               <MDXRemote
                 source={content}
                 options={MarkdownOptions}
