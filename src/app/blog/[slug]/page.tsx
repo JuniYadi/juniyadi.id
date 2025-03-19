@@ -13,6 +13,8 @@ import { notFound } from "next/navigation";
 import { s } from "@/lib/slug";
 import { TOCItem } from "@/types/toc";
 
+import "highlight.js/styles/github-dark.min.css";
+
 // Force static generation
 export const dynamic = "force-static";
 export const revalidate = false;
