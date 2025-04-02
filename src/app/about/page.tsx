@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 export default function AboutPage() {
-  const { profile, summary, skills, certifications, experience, education } = resumeData;
+  const { profile, summary, skills, certifications, experience, education, projects } = resumeData;
 
   return (
     <main className="container mx-auto px-4 py-10">
@@ -179,6 +179,42 @@ export default function AboutPage() {
                 </p>
               </div>
             ))}
+          </section>
+          {/* Projects Section */}
+          <section className="mt-10">
+            <h2 className="text-2xl font-bold mb-4 dark:text-white">
+              Projects
+            </h2>
+            <div className="space-y-6">
+              {projects.map((project, index) => (
+                <div key={index} className="border-l-2 border-gray-300 dark:border-gray-600 pl-4">
+                  <h3 className="text-xl font-semibold dark:text-white">
+                    {project.title}
+                  </h3>
+                  <p className="mt-1 dark:text-gray-200">{project.description}</p>
+                  <div className="mt-2">
+                    <span className="font-semibold dark:text-white">Technologies:</span>
+                    <ul className="list-disc pl-5 mt-1 dark:text-gray-200 space-y-1">
+                      {project.technologies.map((tech, techIndex) => (
+                        <li key={techIndex}>{tech}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="mt-2 space-x-4">
+                    {project.githubLink && (
+                      <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                        GitHub
+                      </a>
+                    )}
+                    {project.liveLink && (
+                      <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
           </section>
         </div>
       </div>

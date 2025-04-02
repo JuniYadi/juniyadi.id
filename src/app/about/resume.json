@@ -164,6 +164,13 @@
       "technologies": ["Python", "Pulumi", "AWS"],
       "githubLink": "https://github.com/JuniYadi/python-pulumi",
       "liveLink": "https://pypi.org/project/pulumi-easy"
+    },
+    {
+      "title": "JuniYadi Portfolio & Blog Website",
+      "description": "A personal portfolio and blog website built using Next.js, showcasing my projects, skills, and experiences. The website is hosted on Vercel for optimal performance and scalability.",
+      "technologies": ["Next.js", "Vercel", "Tailwind CSS"],
+      "githubLink": "https://github.com/JuniYadi/juniyadi.id",
+      "liveLink": "https://juniyadi.id"
     }
   ]
 }
