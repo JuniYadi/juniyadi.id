@@ -31,13 +31,13 @@ const projects: Project[] = [
   },
   {
     id: "project-2",
-    title: "E-commerce Platform",
+    title: "Pulumi Easy",
     description:
-      "A fully featured e-commerce platform with user authentication, product management, and payment integration",
+      "pulumi-easy is a Python package that simplifies AWS infrastructure-as-code using Pulumi. It provides higher-level abstractions that make it easier to create common AWS resources without having to write boilerplate code.",
     imageUrl: "/images/projects/ecommerce.png",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    demoUrl: "https://ecommerce-demo.juniyadi.id",
-    githubUrl: "https://github.com/JuniYadi/ecommerce-platform",
+    tags: ["Python", "Pulumi", "AWS"],
+    demoUrl: "https://pypi.org/project/pulumi-easy",
+    githubUrl: "https://github.com/JuniYadi/python-pulumi",
   },
   {
     id: "project-3",
@@ -59,8 +59,8 @@ export default function ProjectsPage() {
         My Projects
       </h1>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 text-center max-w-3xl mx-auto">
-        Here are some of the projects I&apos;ve worked on. Each represents challenges
-        I&apos;ve overcome and skills I&apos;ve developed.
+        Here are some of the projects I&apos;ve worked on. Each represents
+        challenges I&apos;ve overcome and skills I&apos;ve developed.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
