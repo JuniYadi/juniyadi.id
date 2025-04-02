@@ -1,0 +1,169 @@
+{
+  "profile": {
+    "name": "Juni Yadi",
+    "title": "Lead DevOps Engineer",
+    "image": "/profile-white.jpg",
+    "location": "Surabaya, Indonesia",
+    "contact": {
+      "email": "juniyadi94@gmail.com",
+      "github": "https://github.com/JuniYadi",
+      "linkedin": "https://linkedin.com/in/juniyadi",
+      "website": "https://juniyadi.id/"
+    }
+  },
+  "summary": [
+    "Results-driven Cloud DevOps Engineer with 4+ years of experience specializing in cloud infrastructure automation, Kubernetes orchestration, and CI/CD pipeline development. Expertise in AWS, Kubernetes, Terraform, Ansible, and security best practices to optimize system performance and reliability.",
+    "Proven track record of implementing cost-efficient cloud solutions, reducing infrastructure costs by over 60%, cut deployment times by 40%, and enhancing security through automated compliance checks. Passionate about designing scalable, resilient architectures and streamlining workflows to improve operational efficiency."
+  ],
+  "skills": [
+    {
+      "category": "Cloud & Infrastructure",
+      "items": [
+        "AWS (EC2, EKS, Lambda, S3, RDS, VPC)",
+        "Terraform, CloudFormation, Pulumi",
+        "Docker, Kubernetes, Helm",
+        "CI/CD (Jenkins, GitHub Actions)",
+        "GitOps, ArgoCD"
+      ]
+    },
+    {
+      "category": "Security & Monitoring",
+      "items": [
+        "AWS IAM, Secrets Manager",
+        "Vault, Teleport, Pritunl",
+        "ELK Stack, Fluentbit",
+        "Prometheus, Grafana, CloudWatch",
+        "SonarQube, Trivy"
+      ]
+    },
+    {
+      "category": "Networking & Services",
+      "items": [
+        "Istio, AWS ALB/NLB",
+        "Nginx, HAProxy",
+        "VPN, AWS Route 53",
+        "AWS API Gateway, CloudFront",
+        "Redis, RabbitMQ"
+      ]
+    },
+    {
+      "category": "Programming & Automation",
+      "items": [
+        "Python, Bash Script",
+        "TypeScript, JavaScript",
+        "Ansible",
+        "Serverless Framework, SST Framework",
+        "AWS EventBridge, SNS, SQS"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "date": "April 2024"
+    },
+    {
+      "title": "AWS Certified SysOps Administrator – Associate",
+      "date": "November 2022"
+    },
+    {
+      "title": "AWS Academy Graduate - AWS Academy Cloud Operations",
+      "date": "October 2022"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Lead DevOps Engineer",
+      "company": "PT. Pintar Pemenang Asia",
+      "period": "August 2024 - Present",
+      "responsibilities": [
+        "Spearheaded the DevOps team to enhance automation, security, and infrastructure reliability across multiple environments",
+        "Designed and optimized AWS EKS clusters using auto-scaling, Spot Instances, and Terraform, improving cost efficiency and reliability by 30%",
+        "Built and managed GitOps-based CI/CD pipelines using ArgoCD, Jenkins, Terraform, and Ansible, enabling automated zero-downtime deployments",
+        "Optimized build and deployment times for Java & Node.js applications by fine-tuning Jenkins pipelines, caching dependencies, and parallelizing builds, reducing deployment time by 80%",
+        "Integrated SonarQube for automated security scanning & code quality checks, ensuring vulnerabilities are fixed before deployment",
+        "Implemented Istio service mesh with mTLS for secure service-to-service communication, traffic control, and observability in microservices",
+        "Developed real-time monitoring & observability by integrating AWS CloudWatch, Prometheus, and Discord log alerts, reducing incident response time by 50%",
+        "Optimized and scaled Jitsi infrastructure for Prakerja (Government Program), ensuring seamless video conferencing for thousands of users",
+        "Led network observability and traffic control improvements using Istio and Kiali, enhancing performance and debugging capabilities",
+        "Configured AWS ALB Ingress Controller for secure SSL termination & path-based routing to expose microservices efficiently",
+        "Integrated Elastic Cloud for log monitoring and APM for anomaly detection, improving troubleshooting and performance analysis",
+        "Enabled centralized logging with Fluent Bit, ELK Stack (Elasticsearch, Logstash, Kibana), enhancing log insights and system debugging",
+        "Reduced infrastructure costs by migrating Java microservices from x86_64 to ARM architecture using AWS Graviton",
+        "Assisted in integrating AWS infrastructure with client environments on Azure, ensuring seamless interoperability",
+        "Collaborated with Product Teams to develop real-time dashboards in AWS QuickSight, providing critical insights into application performance and user behavior"
+      ]
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "PT. Pintar Pemenang Asia",
+      "period": "August 2022 - August 2024",
+      "responsibilities": [
+        "Reduced AWS costs by 40% within the first three months through resource optimization and instance right-sizing",
+        "Designed and built scalable AWS infrastructure, implementing autoscaling, cost optimization strategies, and microservices architecture",
+        "Lowered bandwidth costs by 90% for internal applications by leveraging AWS VPC Endpoints, optimizing traffic routing, and implementing caching mechanisms",
+        "Reduced storage costs by 60% by implementing the correct S3 storage classes based on usage patterns",
+        "Automated manual infrastructure tasks using Terraform, Ansible, Bash scripts, and Python, improving operational efficiency and reducing manual work",
+        "Developed internal DevOps tools using AWS Lambda, API Gateway, and AWS SNS to monitor AWS SES bounce and complaint rates for proactive email deliverability management",
+        "Integrated microservices with AWS Lambda using Python and TypeScript to build efficient internal automation tools",
+        "Created and managed Java Spring Boot microservices deployments on AWS EKS, ensuring high availability and auto-scaling",
+        "Designed and deployed an uptime monitoring system with real-time alerting, capable of detecting downtime and sending alerts within one second",
+        "Set up and configured Teleport for secure SSH access, internal application authentication, access control, and monitoring, ensuring compliance and security",
+        "Created Ansible scripts to integrate multiple DevOps tools and tested them in a controlled development environment",
+        "Migrated legacy tools (manual deployments) to Helm charts, streamlining updates and maintenance for better Kubernetes (EKS) application management",
+        "Managed and monitored Kubernetes infrastructure using Rancher, ensuring EKS cluster stability, workload performance, and security",
+        "Designed and deployed a scalable Jitsi video conferencing infrastructure for the Prakerja Program, optimizing storage costs for recordings by 50%"
+      ]
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "PT. Aku Cinta Memiles",
+      "period": "July 2021 - August 2022",
+      "responsibilities": [
+        "Built and managed scalable AWS infrastructure for production environments, improving system reliability",
+        "Migrated a traditional database to AWS, ensuring high availability and scalability to handle thousands of users during promotional events",
+        "Configured and optimized Nginx servers for Laravel and Next.js applications, improving response times and resource efficiency",
+        "Implemented Redis as a caching layer, significantly reducing database load and improving system performance",
+        "Migrated system from a single-instance to a multi-instance architecture, resolving I/O bottlenecks and increasing resilience",
+        "Designed and deployed a CI/CD pipeline using GitHub Actions, automating deployments across all existing repositories",
+        "Automated infrastructure provisioning using Ansible, reducing manual setup time and improving consistency",
+        "Managed RDS databases with automated backups, monitoring, and performance optimization",
+        "Performed safe database migrations, ensuring schema updates were executed securely through version-controlled repositories",
+        "Upgraded system notifications using AWS SES, enhancing email reliability and reducing delivery failures",
+        "Conducted frequent system updates and vulnerability scans, strengthening security and reducing risks"
+      ]
+    },
+    {
+      "title": "Backend Development and Cloud/Serverless Architecture",
+      "company": "Pojokan Projects",
+      "period": "May 2019 - July 2021",
+      "responsibilities": [
+        "Developed and maintained serverless backend systems using PHP, Node.js, and TypeScript, leveraging AWS Lambda, API Gateway, and DynamoDB for cost-efficient scalability",
+        "Optimized serverless architectures to reduce costs during idle periods while maintaining high availability for applications in hospital surveys, education platforms, and restaurant management systems",
+        "Designed and implemented CI/CD pipelines using GitHub Actions, automating deployments for seamless application updates",
+        "Built and integrated AWS Chime to enable reliable and scalable online communication features",
+        "Managed and optimized Amazon S3 object storage for faster access and cost reduction",
+        "Utilized Serverless Framework to manage and maintain AWS Lambda functions and associated resources, ensuring efficient IAM policy attachments",
+        "Designed and implemented DNS management solutions using Amazon Route 53 and Cloudflare, ensuring high availability and low latency",
+        "Implemented secure authentication and authorization mechanisms using OAuth2, JWT, and AWS IAM, ensuring robust access control",
+        "Collaborated with cross-functional teams to deliver high-quality software solutions, including front-end engineers, product managers, and designers"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor's in Informatics Engineering",
+      "university": "University Widya Kartika, Surabaya, Indonesia",
+      "period": "2022 - Present"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Pulumi Easy",
+      "description": "pulumi-easy is a Python package that simplifies AWS infrastructure-as-code using Pulumi. It provides higher-level abstractions that make it easier to create common AWS resources without having to write boilerplate code.",
+      "technologies": ["Python", "Pulumi", "AWS"],
+      "githubLink": "https://github.com/JuniYadi/python-pulumi",
+      "liveLink": "https://pypi.org/project/pulumi-easy"
+    }
+  ]
+}

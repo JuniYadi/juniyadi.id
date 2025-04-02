@@ -162,7 +162,15 @@
     "Vault",
     "VPN"
   ],
-  "projects": [],
+  "projects": [
+    {
+      "title": "Pulumi Easy",
+      "description": "<p>pulumi-easy is a Python package that simplifies AWS infrastructure-as-code using Pulumi. It provides higher-level abstractions that make it easier to create common AWS resources without having to write boilerplate code.</p>",
+      "technologies": ["Python", "Pulumi", "AWS"],
+      "githubLink": "https://github.com/JuniYadi/python-pulumi/tags",
+      "liveLink": ""
+    }
+  ],
   "interests": [],
   "references": []
 }
