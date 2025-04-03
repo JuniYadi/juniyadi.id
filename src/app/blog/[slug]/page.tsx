@@ -2,6 +2,7 @@ import Comments from "@/components/Comments";
 import Image from "next/image";
 import matter from "gray-matter";
 import Pre from "@/components/Pre";
+import BlogImage from "@/components/BlogImage";
 import TableOfContent from "@/components/TableOfContent";
 import { formatDateTime } from "@/lib/date";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
@@ -95,22 +96,19 @@ export default function Page({ params }: { params: { slug: string } }) {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Main content - blog post */}
           <main className="prose dark:prose-invert max-w-none lg:col-span-3">
-            <article className="prose prose-base dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 max-w-none mx-auto w-full">
-              <h1>{itemContent.fields.title}</h1>
+            <article className="prose prose-sm dark:prose-invert prose-table:border-collapse prose-td:border prose-td:border-gray-300 prose-td:p-2 prose-th:border prose-th:border-gray-300 prose-th:p-2 max-w-none mx-auto w-full">
+              <h1 className="text-3xl">{itemContent.fields.title}</h1>
               <div className="text-sm text-gray-500 mb-2">
                 Posted by {itemContent.fields.author} at{" "}
                 {itemContent.fields.date &&
                   formatDateTime(itemContent.fields.date)}
               </div>
 
-              <p>{itemContent.fields.description}</p>
+              <p className="text-base">{itemContent.fields.description}</p>
 
-              <Image
-                src={itemContent.fields.cover}
-                alt={itemContent.fields.title}
-                width={640}
-                height={360}
-                className="mb-4 w-full"
+              <BlogImage 
+                src={itemContent.fields.cover} 
+                alt={itemContent.fields.title} 
               />
 
               {/* Mobile Table of Contents - Always visible on mobile */}
@@ -127,11 +125,22 @@ export default function Page({ params }: { params: { slug: string } }) {
                 </div>
               )}
 
-              <MDXRemote
-                source={content}
-                options={MarkdownOptions}
-                components={{ pre: (props) => <Pre {...props} /> }}
-              />
+              <div className="prose-sm">
+                <MDXRemote
+                  source={content}
+                  options={MarkdownOptions}
+                  components={{ 
+                    pre: (props) => <Pre {...props} />,
+                    img: (props) => (
+                      <BlogImage
+                        {...props}
+                        width={props.width ? Number(props.width) : undefined}
+                        height={props.height ? Number(props.height) : undefined}
+                      />
+                    ),
+                  }}
+                />
+              </div>
               <div className="text-sm text-gray-500 mb-2">
                 Categories:{" "}
                 <a
