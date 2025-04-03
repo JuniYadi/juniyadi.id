@@ -154,3 +154,74 @@ pre > code {
 
   display: inline-block;
 }
+
+/* Print styles */
+@media print {
+  /* Hide header and footer */
+  header[class*="navbar"],
+  footer {
+    display: none !important;
+  }
+
+  /* Reset background and text colors */
+  body {
+    background: none !important;
+    color: black !important;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Optimize layout for printing */
+  .max-w-4xl {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Make links display their URLs */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    font-style: italic;
+  }
+
+  /* Remove background colors and shadows */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Ensure text is black for better print quality */
+  .text-gray-600,
+  [class*="text-gray"] {
+    color: black !important;
+  }
+
+  /* Remove hover effects */
+  .hover\:underline:hover {
+    text-decoration: none !important;
+  }
+
+  /* Adjust section spacing */
+  section {
+    page-break-inside: avoid;
+    margin-bottom: 1em !important;
+  }
+
+  /* Force page breaks before major sections */
+  section h2 {
+    page-break-before: auto;
+  }
+
+  /* Remove unnecessary margins and padding */
+  .p-6 {
+    padding: 0 !important;
+  }
+
+  .space-y-8 > * + * {
+    margin-top: 1em !important;
+  }
+}
