@@ -1,5 +1,4 @@
 import Comments from "@/components/Comments";
-import Image from "next/image";
 import matter from "gray-matter";
 import Pre from "@/components/Pre";
 import BlogImage from "@/components/BlogImage";
@@ -106,9 +105,9 @@ export default function Page({ params }: { params: { slug: string } }) {
 
               <p className="text-base">{itemContent.fields.description}</p>
 
-              <BlogImage 
-                src={itemContent.fields.cover} 
-                alt={itemContent.fields.title} 
+              <BlogImage
+                src={itemContent.fields.cover}
+                alt={itemContent.fields.title}
               />
 
               {/* Mobile Table of Contents - Always visible on mobile */}
@@ -129,7 +128,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <MDXRemote
                   source={content}
                   options={MarkdownOptions}
-                  components={{ 
+                  components={{
                     pre: (props) => <Pre {...props} />,
                     img: (props) => (
                       <BlogImage
